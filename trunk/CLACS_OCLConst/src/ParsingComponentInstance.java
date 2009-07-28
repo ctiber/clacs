@@ -10,31 +10,48 @@ public class ParsingComponentInstance {
 	public ComponentInstance analyse(Node ComponentInstanceNode){
 		ComponentInstance c = GCLACSFactory.eINSTANCE.createComponentInstance();
 		String defineByDesc = "";
-		String nameComp = "";
 		
 		//defineByDesc
-		//try{
+		try{
 			defineByDesc = ComponentInstanceNode.getChildNodes().item(1).getTextContent();
-		//}catch(Exception e){
-			
-		//}
+		}catch(Exception e){
+			defineByDesc = "UnnamedComponentDescriptor";
+			System.out.println("Erreur : Pas de descripteur pour ce composant !");
+			e.printStackTrace();
+		}
 		c.setDefineByDescriptor(defineByDesc);
+		
 		//Kind
 		ComponentKind CK = null;
-		if(ComponentInstanceNode.getAttributes().getNamedItem("kind").getNodeValue().toString().equals("contract")){
-			CK = ComponentKind.CONTRACT;
-		} else if(ComponentInstanceNode.getAttributes().getNamedItem("kind").getNodeValue().toString().equals("constraint")){
-			CK = ComponentKind.CONSTRAINT;
-    	} else {
-    		CK = ComponentKind.BUSINESS;
-    	}
+		try{
+			if(ComponentInstanceNode.getAttributes().getNamedItem("kind").getNodeValue().toString().equals("contract")){
+				CK = ComponentKind.CONTRACT;
+			} else if(ComponentInstanceNode.getAttributes().getNamedItem("kind").getNodeValue().toString().equals("constraint")){
+				CK = ComponentKind.CONSTRAINT;
+	    	}
+		}catch(Exception e){
+			CK = ComponentKind.BUSINESS;
+		}
 		c.setKind(CK);
 		
-		//nom Comp
-		nameComp = ComponentInstanceNode.getAttributes().getNamedItem("name").getNodeValue().toString();
-		c.setName(nameComp);
+		
+		c.setName(getComponentInstanceName(ComponentInstanceNode));
 		
 		return c;
+	}
+	
+	public String getComponentInstanceName(Node ComponentInstanceNode){
+		String nameComp = "";
+		
+		//nom Comp
+		try{
+			nameComp = ComponentInstanceNode.getAttributes().getNamedItem("name").getNodeValue().toString();
+		}catch(Exception e){
+			nameComp = "UnnamedComponentInstance";
+			System.out.println("Erreur : Pas de nom d'instance pour ce composant !");
+			e.printStackTrace();
+		}
+		return nameComp;
 	}
 	
 }

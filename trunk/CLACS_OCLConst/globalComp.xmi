@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="ASCII"?>
 <gcl:Document_Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gcl="GCLACS">
   <componentInstance name="instGlobalComp" defineByDescriptor="GlobalComp">
-    <interface name=""/>
     <componentInstance name="instCst" kind="constraint" defineByDescriptor="Cst">
       <interface name="interfaceCst">
         <service name="serviceCst" kind="constraintCheck" returnedType="">
           <body value="self.name = 'instComp'" language="OCL"/>
         </service>
       </interface>
-      <port xsi:type="gcl:ProvidedPort" name="PPCst" visibility="external">
-        <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@componentInstance.0/@port.0"/>
-      </port>
+      <port xsi:type="gcl:ProvidedPort" name="PPCst" visibility="external"/>
     </componentInstance>
     <componentInstance name="instCst2" kind="constraint" defineByDescriptor="Cst2">
-      <port xsi:type="gcl:RequiredPort" name="RPCst2">
-        <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@componentInstance.1/@port.0"/>
-      </port>
-      <port xsi:type="gcl:ProvidedPort" name="PPCst2" visibility="external">
-        <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@componentInstance.1/@port.1"/>
-      </port>
+      <port xsi:type="gcl:RequiredPort" name="RPCst2"/>
+      <port xsi:type="gcl:ProvidedPort" name="PPCst2" visibility="external"/>
     </componentInstance>
     <componentInstance name="instComp" defineByDescriptor="Comp">
-      <port xsi:type="gcl:RequiredPort" name="RPComp">
-        <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@componentInstance.2/@port.0"/>
-      </port>
-      <port xsi:type="gcl:ProvidedPort" name="PPComp" visibility="external">
-        <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@componentInstance.2/@port.1"/>
-      </port>
+      <port xsi:type="gcl:RequiredPort" name="RPComp"/>
+      <port xsi:type="gcl:ProvidedPort" name="PPComp" visibility="external"/>
     </componentInstance>
-    <port xsi:type="gcl:ProvidedPort" name="PPGComp">
-      <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@port.0"/>
-    </port>
-    <port xsi:type="gcl:RequiredPort" name="RPGComp">
-      <defineByInterface Interface="//@componentInstance/@interface.0" port="//@componentInstance/@port.1"/>
-    </port>
+    <port xsi:type="gcl:ProvidedPort" name="PPGComp"/>
+    <port xsi:type="gcl:RequiredPort" name="RPGComp"/>
     <binding source="//@componentInstance/@componentInstance.0/@port.0" target="//@componentInstance/@componentInstance.1/@port.0" name="bindCstCst2" usedServiceName="serviceCst" usedServiceArgs=""/>
     <binding source="//@componentInstance/@componentInstance.1/@port.1" target="//@componentInstance/@componentInstance.2/@port.0" name="bindCst2Comp"/>
     <binding kind="delegation" source="//@componentInstance/@componentInstance.2/@port.1" target="//@componentInstance/@port.0" name="bindCompGComp"/>
