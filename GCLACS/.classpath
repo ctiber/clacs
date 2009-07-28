@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/net.sourceforge.lpg.lpgjavaruntime_1.1.0.v200706111738.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.emf.ocl.doc_1.1.0.v200706071450.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.emf.ocl.examples_1.1.0.v200706071450.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.emf.ocl_1.1.1.v200709121956.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.ocl.doc_1.1.0.v200706071450.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.ocl.ecore_1.1.0.v200706071450.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.ocl.uml_1.1.1.v200707131415.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/pluginsCLACS/Dependances/eclipse/plugins/org.eclipse.ocl_1.1.2.v200711262212.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/net.sourceforge.lpg.lpgjavaruntime.source_1.1.0.v200803061910.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/net.sourceforge.lpg.lpgjavaruntime_1.1.0.v200803061910.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl.doc_1.1.101.v200807161725.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl.examples.interpreter_1.2.0.v200805130238.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl.examples.source_1.2.0.v200805130238.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl.examples_1.2.0.v200805130238.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl.source_1.1.101.v200808291106-108Z7w3119193_2217.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.emf.ocl_1.1.101.v200808291106.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl.doc_1.2.1.v200807161725.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl.ecore_1.2.1.v200807301850.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl.source_1.2.3.v200810101725-3439oA55T5F8H8PAB.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl.uml.source_1.2.3.v200811021759-1127w311_12182518.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl.uml_1.2.3.v200901071407.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/mdt-ocl-Update-1.2.3/plugins/org.eclipse.ocl_1.2.3.v200901071407.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.diagram.ui.resources.editor_1.1.1.v20080716-1600.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Nico import/dep_outil1/org.eclipse.emf.ecore.xmi_2.3.0.v200706262000.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/Dépendances+/org.eclipse.gmf.codegen_2.1.1.v20090212-1755.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
