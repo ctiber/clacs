@@ -1,0 +1,7 @@
+# Tracing options for the GCLACS.diagram plug-in
+
+# Common issues
+GCLACS.diagram/debug=false
+
+# Visual IDs
+GCLACS.diagram/debug/visualID=false
