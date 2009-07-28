@@ -1,0 +1,82 @@
+#Explicite les principales différences entre la version 1.0 et la version 1.1#
+
+= Différentiel entre la version 1.0 et la version 1.1 =
+
+*Une liste des principaux changements entre les 2 versions : *
+
+ - Ajouts de nombreux tests / gestion d'exceptions limitant les crashs à la validation d'une architecture et augmentant le feedback
+
+ - Modification des métamodèles CLACS (décrivant le langage) et GCLACS (décrivant l'environnement graphique), voir comparatif des métamodèles 
+
+ - Modification des modèles GMF (gmfgraph, gmftool, gmfmap, gmfgen) voir comparatif des modèles GMF 
+
+ - Amélioration de l'interface graphique (Custom figure) 
+
+ - Ajout graphique des arguments(Arg) et un corps(Body), type de retour (returnedType) pour les services et implémentation des modifications associées
+ 
+ - Ajout graphique des services utilisés(UsedService) et leurs valeurs
+ d'argument(listArgService) pour les binding et implémentation des modifications associées 
+
+ - Intégration et analyse des contraintes OCL (avec ou sans argument) se basant sur l'architecture de composants modélisée 
+
+
+
+= Détails =
+
+*Comparatif ancien / nouveau métamodèle CLACS* 
+
+Le descripteur de composant(ComponentDescriptor), qui était l'élément central de l'ancien métamodèle a laissé place à l'instance de composant (ComponentInstance). Cela permet de voir un composant modélisé comme étant de base une instance d'un composant (décrivant le descripteur de ce composant). 
+
+Manipuler une instance autorise la génération d'une instance ou d'un descripteur de composant aisément. Ainsi, les ports, interfaces et binding de retrouvent "inclus" dans l'instance de composant. La notion de descripteur a été encapsulé, de manière a simplifier la modélisation, elle reste bien-sûr présente en interne. 
+
+Les notions de corps de service (Body), arguments des services (Arg) ainsi que les services utilisés par un binding (UsedService) étaient déjà présentes dans ce métamodèle, mais non implémentées. 
+
+On peut voir que les notions d'AssemblyBinding et de DelegationBinding ont été ajouté, mais qu'elle ne sont pas pour le moment connectés au binding. 
+
+L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind (ces modifications induiront une modification du système d'interprétation des contraintes OCL). 
+
+*Comparatif ancien/ nouveau métamodèle GCLACS*
+ 
+Toutes les modifications apportées au métamodèle CLACS ont eu des répercutions sur ce métamodèle. 
+
+Les éléments suivants ont été retravaillé : 
+
+ - De la même manière que pour le métamodèle CLACS, le métamodèle est centralisé autour de la notion d'instance de composant (ComponentInstance) 
+
+ - Comme pour le métamodèle CLACS, les services disposent désormais d'un corps (Body), d'un ensemble d'arguments (Arg) et d'un type de retour (returnedType)
+ 
+ - Les binding disposent désormais d'un nom (pour pouvoir être identifié dans les contraintes OCL). Ils possèdent de plus un service utilisé (usedServiceName) et de la liste de ses paramètres (usedServiceArgs). 
+ 
+*Modifications gmfgraph* 
+
+Comme on peut le voir sur cette nouvelle version du gmfgraph, le noeud ComponentDescriptor et sa représentation associée a été retiré. 
+
+La figure du ComponentInstance se voit doté d'un label supplémentaire, permettant de renseigner le nom du descripteur qui lui est lié. 
+
+Les nœuds Arg et Body font leur apparition et sont décrits par des "Custom Figure", figure que l'on va créer de tout pièce en créant une nouvelle classe basée sur la classe générique "Shape". 
+
+Un "Compartment" BodyArgsCompartments a été ajouté. Il appartiendra à l'élément Service permettant le stockage des Arg et Body. 
+
+*Modifications gmfmap* 
+
+La hiérarchie des éléments a été totalement revue. Elle a donc été adaptée pour ne plus contenir les descripteurs de composants, et s'est étendue pour gérer les nouveaux concepts comme le corps d'un service ou ses arguments. 
+
+*Modifications gmftool* 
+
+Ce modèle décrit le contenu de la palette servant à modéliser les éléments (Composant, Ports, Services etc.) dans l'environnement GCLACS. 
+
+Il a donc subit peu de changement : la disparition de l'outil ComponentDescriptor, et l'apparition des outils Body et Arg. 
+
+
+*Modification au niveau du code source :*
+
+ - Les classes régissant la gestion des items du menu du plugin GCLACS ont été retravaillées pour correspondre aux nouveaux modèles. 
+(voir screen) 
+
+ - Le langage de spécification CLACS et l'environnement GCLACS ayant subit des modifications, les opérations résultantes ont aussi été retravaillées.
+
+Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre. 
+(voir screen)
+ Les interprétations tirant partie de binding plus évolués (AND, OR, XOR etc.) pour combiner les contraintes ne sont pas encore implémentées. Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. Le premier composant non contrainte trouvé sera le contexte.
+
+(voir screen)
