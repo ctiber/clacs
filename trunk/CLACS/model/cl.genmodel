@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CLACS/src"
+    modelPluginID="CLACS" modelName="Cl" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>cl.ecore</foreignModel>
+  <genPackages prefix="Cl" basePackage="metamodele.clacs" resource="XML" disposableProviderFactory="true"
+      ecorePackage="cl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//BindingKind">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/simple"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/delegation"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/bSI"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/aSI"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/bCon"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/aCon"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/bDiscon"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/aDiscon"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/constraintConnection"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//BindingKind/contractConnection"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//ComponentKind">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ComponentKind/business"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ComponentKind/constraint"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ComponentKind/contract"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//Direction">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//Direction/required"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//Direction/provided"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//ServiceKind">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ServiceKind/business"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ServiceKind/constraintCheck"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//ServiceKind/contractCheck"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//Visibility">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//Visibility/external"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//Visibility/internal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//A_BindingKind">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//A_BindingKind/and"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//A_BindingKind/or"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//A_BindingKind/xor"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//A_BindingKind/implies"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//A_BindingKind/functional"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="cl.ecore#//D_BindingKind">
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//D_BindingKind/negative"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//D_BindingKind/affirmative"/>
+      <genEnumLiterals ecoreEnumLiteral="cl.ecore#//D_BindingKind/functional"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="cl.ecore#//BindingKindObject"/>
+    <genDataTypes ecoreDataType="cl.ecore#//ComponentKindObject"/>
+    <genDataTypes ecoreDataType="cl.ecore#//DirectionObject"/>
+    <genDataTypes ecoreDataType="cl.ecore#//ServiceKindObject"/>
+    <genDataTypes ecoreDataType="cl.ecore#//VisibilityObject"/>
+    <genClasses ecoreClass="cl.ecore#//Arg">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Arg/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Arg/type"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//Binding">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//Binding/usedService"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/glue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Binding/name"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//BodyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//BodyType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//BodyType/language"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//ComponentInstance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//ComponentInstance/definedByDescriptor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//ComponentInstance/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//ComponentInstance/interface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//ComponentInstance/componentInstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//ComponentInstance/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//ComponentInstance/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//ComponentInstance/binding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//ComponentInstance/kind"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference cl.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference cl.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference cl.ecore#//DocumentRoot/componentInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//Interface">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//Interface/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Interface/descrition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Interface/name"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Port/direction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Port/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Port/definedByInterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Port/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Port/name"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//Service/arg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Service/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cl.ecore#//Service/body"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Service/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Service/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//Service/returnedType"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//UsedService">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//UsedService/arg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//UsedService/name"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//AssemblyBinding">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//AssemblyBinding/kind"/>
+    </genClasses>
+    <genClasses ecoreClass="cl.ecore#//DelegationBinding">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cl.ecore#//DelegationBinding/kind"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
