@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: CLACS; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: metamodele.clacs.cl,
+ metamodele.clacs.cl.impl,
+ metamodele.clacs.cl.util,
+ CLACS.activator,
+ CLACS
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.draw2d,
+ org.eclipse.gmf.runtime.draw2d.ui,
+ GCLACS
+Eclipse-LazyStart: true
+Bundle-Activator: CLACS.activator.PluginActivator
+Import-Package: org.eclipse.gmf.runtime.draw2d.ui.render.figures
