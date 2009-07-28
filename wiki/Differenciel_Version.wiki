@@ -1,4 +1,4 @@
-#Explicite les principales différences entre la version 1.0 et la version 1.1#
+_Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 = Différentiel entre la version 1.0 et la version 1.1 =
 
@@ -24,6 +24,14 @@
 = Détails =
 
 ==Comparatif ancien / nouveau métamodèle CLACS==
+
+
+===Ancien métamodèle CLACS===
+[http://clacs.googlecode.com/files/CLACS23-07-09.svg]
+
+
+===Nouveau métamodèle CLACS===
+[http://clacs.googlecode.com/files/GCLACS.svg]
 
 Le descripteur de composant(ComponentDescriptor), qui était l'élément central de l'ancien métamodèle a laissé place à l'instance de composant (ComponentInstance). Cela permet de voir un composant modélisé comme étant de base une instance d'un composant (décrivant le descripteur de ce composant). 
 
