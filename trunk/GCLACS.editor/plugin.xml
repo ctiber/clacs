@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="GCLACS.presentation.GCLACSModelWizardID"
+            name="%_UI_GCLACSModelWizard_label"
+            class="GCLACS.presentation.GCLACSModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GCLACSModelFile.gif">
+         <description>%_UI_GCLACSModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="GCLACS.presentation.GCLACSEditorID"
+            name="%_UI_GCLACSEditor_label"
+            icon="icons/full/obj16/GCLACSModelFile.gif"
+            extensions="gclacs"
+            class="GCLACS.presentation.GCLACSEditor"
+            contributorClass="GCLACS.presentation.GCLACSActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
