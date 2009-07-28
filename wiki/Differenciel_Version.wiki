@@ -27,11 +27,11 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 
 ===Ancien métamodèle CLACS===
-[http://clacs.googlecode.com/files/CLACS23-07-09.svg]
+[http://clacs.googlecode.com/files/CLACS.png]
 
 
 ===Nouveau métamodèle CLACS===
-[http://clacs.googlecode.com/files/GCLACS.svg]
+[http://clacs.googlecode.com/files/CLACS23-07-09.png]
 
 Le descripteur de composant(ComponentDescriptor), qui était l'élément central de l'ancien métamodèle a laissé place à l'instance de composant (ComponentInstance). Cela permet de voir un composant modélisé comme étant de base une instance d'un composant (décrivant le descripteur de ce composant). 
 
@@ -45,6 +45,13 @@ L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind (ce
 
 ==Comparatif ancien/ nouveau métamodèle GCLACS==
  
+===Ancien métamodèle GCLACS===
+[http://clacs.googlecode.com/files/GCLACS.png]
+
+
+===Nouveau métamodèle GCLACS===
+[http://clacs.googlecode.com/files/GCLACS23-07-09.png]
+
 Toutes les modifications apportées au métamodèle CLACS ont eu des répercutions sur ce métamodèle. 
 
 Les éléments suivants ont été retravaillé : 
