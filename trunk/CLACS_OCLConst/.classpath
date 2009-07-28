@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CLACS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CLACS.edit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CLACS.editor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CLACS.tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS.edit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS.editor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS.tests"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ant-junit-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/antlr-runtime-3.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/apollon-runtime-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/asm-3.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ast-core-2.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/aval-0.7.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/bsf-2.4.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/castor-0.9.9.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/commandline-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/commons-cli-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/commons-lang-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/commons-logging-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/core-3.2.0.666.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/dtdparser-1.21.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/dumper-0.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/explorer-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/explorer-reflector-plugin-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fraclet-annotations-3.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-adl-2.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractaladl-spoonlet-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-api-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-explorer-1.1.3-20071206.083344-2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-libraries-1.1.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-rmi-0.3.5.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-spoonlet-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fractal-util-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fscript-2.1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/fscript-console-2.1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/google-collect-0.5-20080322.110711-2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/google-collect-snapshot-20080530.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/groovy-all-1.1-beta-2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jcip-annotations-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jdom-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jgraph-fractal.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jline-0.9.9.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jonathan-3.0.10.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jsap-2.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/julia-asm-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/julia-mixins-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/julia-runtime-2.5.1.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/mockobjects-core-0.09.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/monolog-1.8.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/monolog-api-1.8.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/mx4j-3.0.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/openejb-loader-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ow-misc-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/ow-trace-1.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/spoon-core-1.3.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/task-deployment-2.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/task-framework-2.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/xercesImpl-2.4.0.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/xml-spoonlet-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/xpp3_min-1.1.3.4.O.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/fractal-distribution-ant-common/lib/xstream-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/org.eclipse.emf.common_2.3.0.v200706262000.jar/org.eclipse.emf.common_2.3.0.v200706262000.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/org.eclipse.emf.ecore_2.3.0.v200706262000.jar/org.eclipse.emf.ecore_2.3.0.v200706262000.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/net.sourceforge.lpg.lpgjavaruntime.source_1.1.0.v200803061910.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/net.sourceforge.lpg.lpgjavaruntime_1.1.0.v200803061910.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.emf.ocl.doc_1.1.101.v200906151230.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.emf.ocl.examples.source_1.3.0.v200901271800.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.emf.ocl.examples_1.3.0.v200901271800.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.emf.ocl.source_1.1.101.v200901271800.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.emf.ocl_1.1.101.v200901271800.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.doc_1.3.0.v200906151230.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.ecore.source_1.3.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.ecore_1.3.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.source_1.3.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.uml.source_2.0.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl.uml_2.0.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/eclipse/plugins/org.eclipse.ocl_1.3.0.v200905271400.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Nico import/dep_outil1/org.eclipse.emf.ecore.xmi_2.3.0.v200706262000.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CLACStoSCL_Plugin"/>
+	<classpathentry kind="lib" path="/auto/auboin/Nico import/dep_outil1/org.eclipse.emf.common_2.3.0.v200706262000.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Nico import/dep_outil1/org.eclipse.emf.ecore_2.3.0.v200706262000.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/Roseline/Dépendances+/org.eclipse.gef_3.2.102.v20080116.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.diagram.ui.resources.editor_1.1.1.v20080716-1600.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.diagram.ui.resources.editor_1.1.1.v20080716-1600.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/gmf/runtime/diagram/ui/resources/editor/parts/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.ui.workbench_3.4.2.M20090127-1700.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.ui.workbench.source_3.4.2.M20090127-1700.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.platform.doc.isv_3.4.2.r342_v20090204.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/about/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/actions/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/activities/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/application/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/branding/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/browser/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/commands/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/contexts/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/dialogs/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/dnd/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/fieldassist/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/handlers/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/help/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/about/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/actions/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/activities/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/activities/ws/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/application/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/browser/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/commands/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/contexts/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/decorators/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/dialogs/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/dnd/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/editorsupport/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/expressions/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/handlers/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/help/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/intro/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/keys/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/keys/model/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/layout/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/menus/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/misc/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/model/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/operations/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/part/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/preferences/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/presentations/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/presentations/classic/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/presentations/defaultpresentation/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/presentations/util/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/progress/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/provisional/application/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/provisional/presentations/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/quickaccess/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/registry/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/services/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/splash/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/statushandlers/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/testing/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/themes/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/tweaklets/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/util/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/wizards/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/wizards/preferences/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/intro/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/keys/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/menus/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/model/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/operations/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/part/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/plugin/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/preferences/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/presentations/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/progress/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/services/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/splash/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/statushandlers/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/swt/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/testing/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/themes/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/views/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/wizards/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.diagram.ui_1.1.3.v20090114-1755.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.diagram.ui.source_1.1.3.v20090114-1755.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/gmf/runtime/diagram/ui/parts/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.ui.views.properties.tabbed_3.4.2.M20090127-1700.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.ui.views.properties.tabbed.source_3.4.2.M20090127-1700.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.platform.doc.isv_3.4.2.r342_v20090204.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/views/properties/tabbed/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.equinox.registry_3.4.0.v20080516-0950.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.equinox.registry.source_3.4.0.v20080516-0950.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.platform.doc.isv_3.4.2.r342_v20090204.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/adapter/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/registry/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/registry/osgi/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/registry/spi/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/dynamichelpers/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/spi/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.core.commands_3.4.0.I20080509-2000.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.core.commands.source_3.4.0.I20080509-2000.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.platform.doc.isv_3.4.2.r342_v20090204.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/core/commands/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/commands/common/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/commands/contexts/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/commands/operations/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/commands/util/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/commands/operations/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/commands/util/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.notation_1.1.1.v20080716-1600.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.gmf.runtime.notation.source_1.1.1.v20080716-1600.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/gmf/runtime/notation/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/auto/auboin/XMIBUilderFinal/GenCocola/lib/org.eclipse.emf.ecore.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/XMIBUilderFinal/GenCocola/lib/org.eclipse.emf.ecore.xmi.jar"/>
+	<classpathentry kind="lib" path="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.core.resources_3.4.2.R34x_v20090126.jar" sourcepath="/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.core.resources.source_3.4.2.R34x_v20090126.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/auto/auboin/EclipseRecup/eclipse/plugins/org.eclipse.platform.doc.isv_3.4.2.r342_v20090204.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/dtree/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/events/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/localstore/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/properties/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/propertytester/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/refresh/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/resources/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/resources/mapping/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/resources/refresh/win32/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/utils/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/watson/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/resources/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/resources/mapping/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/resources/refresh/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/resources/team/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/indexing/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS.diagram"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
