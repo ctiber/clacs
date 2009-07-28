@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="CLACS to Scl code"
+            id="CLACStoSCL_Plugin.commands.category">
+      </category>
+      <command
+            categoryId="CLACStoSCL_Plugin.commands.category"
+            id="CLACStoSCL_Plugin.commands.Adaptater"
+            name="Architecture GCLACS vers architecture CLACS">
+      </command>
+      <command
+            categoryId="CLACStoSCL_Plugin.commands.category"
+            id="CLACStoSCL_Plugin.commands.Validator"
+            name="Validation de l&apos;architecture CLACS">
+      </command>
+      <command
+            categoryId="CLACStoSCL_Plugin.commands.category"
+            id="CLACStoSCL_Plugin.commands.Constraint"
+            name="Verification des contraintes">
+      </command>
+      <command
+            name="Architecture CLACS Vers du code Scl"
+            categoryId="CLACStoSCL_Plugin.commands.category"
+            id="CLACStoSCL_Plugin.commands.Generator">
+      </command>
+      <command
+            categoryId="CLACStoSCL_Plugin.commands.category"
+            id="CLACStoSCL_Plugin.commands.Squeak"
+            name="Charger dans Squeak">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="clacstoscl_plugin.handlers.AdaptaterHandler"
+            commandId="CLACStoSCL_Plugin.commands.Adaptater">
+      </handler>
+      <handler
+            class="clacstoscl_plugin.handlers.ValidatorHandler"
+            commandId="CLACStoSCL_Plugin.commands.Validator">
+      </handler>
+      <handler
+            class="clacstoscl_plugin.handlers.ConstraintHandler"
+            commandId="CLACStoSCL_Plugin.commands.Constraint">
+      </handler>
+      <handler
+            commandId="CLACStoSCL_Plugin.commands.Generator"
+            class="clacstoscl_plugin.handlers.GeneratorHandler">
+      </handler>
+      <handler
+            class="clacstoscl_plugin.handlers.SqueakHandler"
+            commandId="CLACStoSCL_Plugin.commands.Squeak">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="CLACStoSCL_Plugin.commands.Adaptater"
+            contextId="org.eclipse.ui.contexts.windows"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+A">
+      </key>
+      <key
+            commandId="CLACStoSCL_Plugin.commands.Validator"
+            contextId="org.eclipse.ui.contexts.windows"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+V">
+      </key>
+      <key
+            commandId="CLACStoSCL_Plugin.commands.Constraint"
+            contextId="org.eclipse.ui.contexts.windows"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+C">
+      </key>
+      <key
+            commandId="CLACStoSCL_Plugin.commands.Generator"
+            contextId="org.eclipse.ui.contexts.windows"
+            sequence="M1+G"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+      <key
+            commandId="CLACStoSCL_Plugin.commands.Squeak"
+            contextId="org.eclipse.ui.contexts.windows"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+S">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="CLACS"
+               mnemonic="C"
+               id="CLACStoSCL_Plugin.menus.sampleMenu">
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Adaptater"
+                  id="CLACStoSCL_Plugin.menus.Adaptater"
+                  mnemonic="A">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Validator"
+                  id="CLACStoSCL_Plugin.menus.validator"
+                  mnemonic="V">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Constraint"
+                  id="CLACStoSCL_Plugin.menus.Constraint"
+                  mnemonic="C">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Generator"
+                  mnemonic="G"
+                  id="CLACStoSCL_Plugin.menus.Generator">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Squeak"
+                  id="CLACStoSCL_Plugin.menus.Squeak"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="CLACStoSCL_Plugin.toolbars.sampleToolbar">
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Adaptater"
+                  icon="icons/sample.gif"
+                  id="CLACStoSCL_Plugin.toolbars.Adaptater"
+                  tooltip="Architecture GCLACS vers architecture CLACS">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Validator"
+                  icon="icons/SclModelFile.gif"
+                  id="CLACStoSCL_Plugin.toolbars.Validator"
+                  tooltip="Validation de l&apos;architecture CLACS">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Constraint"
+                  icon="icons/SclModelFile.gif"
+                  id="CLACStoSCL_Plugin.toolbars.Constraint"
+                  tooltip="Evaluation des contraintes">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Generator"
+                  icon="icons/sample.gif"
+                  tooltip="Architecture CLACS Vers du code Scl"
+                  id="CLACStoSCL_Plugin.toolbars.Generator">
+            </command>
+            <command
+                  commandId="CLACStoSCL_Plugin.commands.Squeak"
+                  icon="icons/sample.gif"
+                  id="CLACStoSCL_Plugin.toolbars.Squeak"
+                  tooltip="Charger dans Squeak">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

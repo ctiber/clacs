@@ -1,0 +1,29 @@
+<%@ jet package="GeneratorCode" class="FichierMethodProvided" 
+imports="java.util.*
+javax.xml.parsers.DocumentBuilder
+javax.xml.parsers.DocumentBuilderFactory
+org.w3c.dom.Document
+org.w3c.dom.Element
+org.w3c.dom.Node
+org.w3c.dom.NodeList"%>
+<%
+Object[] recup = ((Object[])argument);
+String nomDescripteur = ((String)recup[0]);
+ArrayList<Element> listInterfacesProvided = ((ArrayList<Element>)recup[1]);
+
+for(int i=0; i<listInterfacesProvided.size(); i++){
+	NodeList ListServ =  ((Element)listInterfacesProvided.get(i)).getElementsByTagName("cl:Service");
+	for(int f=0; f<ListServ.getLength();f++){
+%><%="\r\r" + nomDescripteur%> compile: '<%=
+"\r" + ((Element)ListServ.item(f)).getAttributes().getNamedItem("name").getNodeValue()%><%
+	NodeList ListArgs =  ((Element)ListServ.item(f)).getElementsByTagName("cl:Arg");
+	for(int a=0; a<ListArgs.getLength();a++){
+		String nomArg = ": " + ((Element)ListArgs.item(a)).getElementsByTagName("cl:Name").item(0).getTextContent();
+		if(!(a==0)) nomArg = "and" + nomArg ;
+		
+		if(!(a == (ListArgs.getLength()-1))) nomArg += " ";%><%=nomArg%><%
+	}
+%><%="\r\t"%>"To be completed"<%="\r'.\r"%><%
+    }
+}    
+%>

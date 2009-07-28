@@ -1,0 +1,161 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: Tl56R6wEzGY9O7aUXBzs+46h6c8=
+Created-By: 1.5.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: uTkTsnUNYmwxmC/y6ksIIqrmXGc=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/uti
+ l/DiagramIOUtil.java
+SHA1-Digest: 6GHZBhHkzU9ZtQJb8PLDSK2PhuA=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/l10
+ n/EditorMessages.java
+SHA1-Digest: LXzIBAohgMTi8YK8MUsUGoKo/ig=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/not
+ ationprovider/EmfNotationException.java
+SHA1-Digest: AvZNMxYB3MPqQYnx8e6I6nYZo1g=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDo
+ cumentEditor.java
+SHA1-Digest: uhy9ySu7hjeqEruJhSLNj4T95Ic=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/pal
+ ette/DiagramPaletteContent.java
+SHA1-Digest: HcQdRiPtBIZQ9UDrToC8J2jNh5A=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/parts/Diagra
+ mDocumentEditor.java
+SHA1-Digest: N2kpWN64BgZlTOvkKuEe2IbWY4Q=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/parts/Diagra
+ mDocumentEditorMatchingStrategy.java
+SHA1-Digest: bYkpDVGBCxH9FO+kHal3BLvAGHM=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/Edi
+ torStatusCodes.java
+SHA1-Digest: JYY8g/O636HX1bNxgOvKDjCqoy0=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDo
+ cument.java
+SHA1-Digest: B49upz/cT3BXPCfnHy/YxoqcNhs=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/util/EditorU
+ til.java
+SHA1-Digest: BAF2joOJg5VDvvsHSu/l8wuiPxE=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Dia
+ gramInputDocumentProvider.java
+SHA1-Digest: /RmhRVrfrMWyAjgH69QrGTTJ6B4=
+
+Name: plugin.properties
+SHA1-Digest: PZADZjFi4m5dddhVleWQb9Y0YUM=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/ui/
+ parts/FileResourceDiagramEditorInput.java
+SHA1-Digest: QBD0XDUabVhW1Y2eVBVlArvyK4c=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/uti
+ l/Util.java
+SHA1-Digest: 06S/U0F5NtoXeJrnlPk3AKDKqL8=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/ui/
+ parts/FileResourceEditorInput.java
+SHA1-Digest: yGyeDLPBlwD5v1pamXH3480b380=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/ISc
+ hedulingRuleProvider.java
+SHA1-Digest: 41BvEtvHep7m4w1E9hJBipQkYbc=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Doc
+ umentEvent.java
+SHA1-Digest: VhEHELCe7mdz6AG4ltHHo5+zH5g=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/uti
+ l/RunnableQueue.java
+SHA1-Digest: QVVlsg6HnWvsijSySkNeGLNKc9U=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Abs
+ tractDocument.java
+SHA1-Digest: VlytONzLjArPu/LLX+/1toQjhqM=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDo
+ cumentListener.java
+SHA1-Digest: bfbI8wRnikYayNib69OBI6L+I6c=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Pat
+ hEditorInputProxy.java
+SHA1-Digest: RU0FnBzMNQ/4mhlpueOEwGumZ5c=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/Edi
+ torPlugin.java
+SHA1-Digest: 2YRYyQCICnt5XnR3gsltjAOMZdk=
+
+Name: about.html
+SHA1-Digest: ndvVw5+urNOEMhFEsasUKrpQYII=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDi
+ agramDocumentProvider.java
+SHA1-Digest: RL2Fv2ytWphnH7uV7MbUM089m3k=
+
+Name: schema/documentProviders.exsd
+SHA1-Digest: Ga3C8CazjDQdk80FURxoZVE+Uzo=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/pal
+ ette/PaletteContent.java
+SHA1-Digest: SUSpjz/Jaa6FeFxiAGkh1YbTDnM=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/util/Diagram
+ FileCreator.java
+SHA1-Digest: qxVs6rzat60kUlpAsh47sQ0M3do=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/pal
+ ette/EditorInputPaletteContent.java
+SHA1-Digest: 61HxGtn9UmLAqVqz+XBbETU3vlI=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/Edi
+ torDebugOptions.java
+SHA1-Digest: FUNS0B2VvpD6LX6OuQymOY4a+Fc=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Abs
+ tractDocumentProvider.java
+SHA1-Digest: EVRD7Y8l3iDItmiQhF9vnjj8tMU=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IEl
+ ementStateListener.java
+SHA1-Digest: QXuqDe+oEADKymKhB/+90hsF8YI=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Doc
+ umentProviderRegistry.java
+SHA1-Digest: 2VyCV9QoAmhg1v+PscVWT72B3R0=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/MEd
+ itingDomainElement.java
+SHA1-Digest: 7kS3OfN8zslXNj4Xr22xdIT1Y/o=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/internal/not
+ ationprovider/EMFNotationModelFactory.java
+SHA1-Digest: OIi7p5IlwChxfWDtATpIjCtKDu0=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Edi
+ torInputProxy.java
+SHA1-Digest: Rs2j4X+iKmDPe9ExCwaMOY1mRH0=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Dia
+ gramModificationListener.java
+SHA1-Digest: 2bv0kkIWIDH9ycUggJz7K1Ou5QQ=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDo
+ cumentProvider.java
+SHA1-Digest: uwcrovdC+0ulToI+Q+D6aPPWS98=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/Dia
+ gramDocument.java
+SHA1-Digest: /PRDl9hD4LsgbcHPsSogJqnK1x0=
+
+Name: org/eclipse/gmf/runtime/diagram/ui/resources/editor/document/IDi
+ agramDocument.java
+SHA1-Digest: N9sDl9+BeEvTVv73VPlC0ysiTF4=
+
