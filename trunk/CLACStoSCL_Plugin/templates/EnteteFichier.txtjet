@@ -1,0 +1,13 @@
+<%@ jet package="GeneratorCode" class="EnteteFichier" 
+imports="java.util.*
+javax.xml.parsers.DocumentBuilder
+javax.xml.parsers.DocumentBuilderFactory
+org.w3c.dom.Document
+org.w3c.dom.Element
+org.w3c.dom.Node
+org.w3c.dom.NodeList"%>
+<%
+Object[] recup = ((Object[])argument); 
+String nomDescription = ((String)recup[0]);
+String categorie = ((String)recup[1]);%>
+(SclBuilder new: #<%=nomDescription +"\r\t" %>category: '<%=categorie%>')
