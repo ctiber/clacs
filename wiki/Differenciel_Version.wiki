@@ -28,8 +28,6 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 ===Ancien métamodèle CLACS===
 [http://clacs.googlecode.com/files/CLACS.png]
-
-
 ===Nouveau métamodèle CLACS===
 [http://clacs.googlecode.com/files/CLACS23-07-09.png]
 
@@ -47,8 +45,6 @@ L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind (ce
  
 ===Ancien métamodèle GCLACS===
 [http://clacs.googlecode.com/files/GCLACS.png]
-
-
 ===Nouveau métamodèle GCLACS===
 [http://clacs.googlecode.com/files/GCLACS23-07-09.png]
 
