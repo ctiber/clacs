@@ -32,7 +32,9 @@ Sommaire :
 == Détails ==
 
 
-_Nous développerons ci-après les modifications apportées aux deux métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc._
+_Nous développerons ci-après les modifications apportées aux deux métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc.
+Nous évoquerons aussi les ajouts apportés aux modèles gmf (gmfgraph, gmfmap, gmftool etc.) qui définissent l'environnement graphique.
+Nous parlerons enfin des modifications apportées au code source._
 
 ===Comparatif ancien / nouveau métamodèle CLACS===
 
