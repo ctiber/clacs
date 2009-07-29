@@ -6,7 +6,7 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
  * Ajouts de nombreux tests / gestion d'exceptions limitant les crashs à la validation d'une architecture et augmentant le feedback
 
- * Modification des métamodèles CLACS (décrivant le langage) et GCLACS (décrivant l'environnement graphique), voir comparatif des métamodèles 
+ * Modification des méta-métamodèles CLACS (décrivant le langage) et GCLACS (décrivant l'environnement graphique), voir comparatif des méta-métamodèles (Les méta-métamodèles sont simplement nommés "métamodèles" dans ce qui suit)
 
  * Modification des modèles GMF (gmfgraph, gmftool, gmfmap, gmfgen) voir comparatif des modèles GMF 
 
@@ -24,7 +24,7 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 = Détails =
 
 
-_Nous développerons ci-après les modifications apportées au 2 méta-métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc._
+_Nous développerons ci-après les modifications apportées aux deux métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc._
 
 ==Comparatif ancien / nouveau métamodèle CLACS==
 
@@ -42,7 +42,8 @@ Les notions de corps de service (Body), arguments des services (Arg) ainsi que l
 
 On peut voir que les notions d'AssemblyBinding et de DelegationBinding ont été ajouté, mais qu'elle ne sont pas pour le moment connectés au binding. 
 
-L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind (ces modifications induiront une modification du système d'interprétation des contraintes OCL). 
+L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind. (ces modifications induiront une modification du système d'interprétation des contraintes OCL). 
+Ils permettront d'effectuer des associations de contraintes. Par exemple, si deux composants contraintes sont connectés entre eux par un binding OR et que ceux-là sont reliés à un composant métier, ce dernier devra satisfaire l'une ou l'autre des contraintes. 
 
 ==Comparatif ancien/ nouveau métamodèle GCLACS==
  
@@ -53,7 +54,7 @@ L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind (ce
 
 Toutes les modifications apportées au métamodèle CLACS ont eu des répercutions sur ce métamodèle. 
 
-Les éléments suivants ont été retravaillé : 
+Les éléments suivants ont été retravaillés : 
 
  * De la même manière que pour le métamodèle CLACS, le métamodèle est centralisé autour de la notion d'instance de composant (ComponentInstance) 
 
