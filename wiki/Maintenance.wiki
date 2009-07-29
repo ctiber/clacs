@@ -14,11 +14,15 @@ Pour bien se familiariser avec les notions élémentaires du projet :
 
 ==Détail des fichiers sources==
 
+
+===Fichiers sources générés (inutiles de modifier) ===
 Parmi les répertoires sources, CLACS.edit, CLACS.editor, CLACS.tests, GCLACS.edit, GCLACS.editor, GCLACS.tests sont des codes sources générés à partir des modèles emf et gmf. Il ne semble pas nécessaire de les modifier à l'heure actuelle.
 
+===Fichiers sources générés (possible besoin de modifier) ===
 Le répertoire GCLACS.diagram est lui aussi généré, mais doit parfois être modifié manuellement (notamment pour personnaliser l'environnement avec de nouvelles classes). 
 Le répertoire CLACStoSCL_Plugin centralise les interactions possibles avec la modélisation graphique réalisée (1 classe par item du menu du plugin et un package pour la génération du code SCL).
 
+===Fichiers sources gestion des contraintes OCL ===
 Le répertoire CLACS_OCLConst correspond à l'analyseur de contraintes OCL.
 Bien penser à générer un nouveau jar exécutable pour que GCLACS le prenne en compte.
 Voici le diagramme de classe explicitant la structure du plugin de contrainte :
@@ -36,6 +40,7 @@ Les choses ont été simplifiées par clarté.
  * FenetreGUI est la classe gérant l'interface graphique, SoftConstraint est la classe contenant la fonction main. 
 Enfin, les répertoires CLACS et GCLACS sont respectivement les cœurs du langage CLACS et celui de l'environnement graphique GCLACS. 
 
+===Fichiers sources générés avec métamodèles ===
 CLACS contient le méta-métamodèle ecore permettant de modéliser les spécifications du langage CLACS. 
 
 ==Modèles GMF==
