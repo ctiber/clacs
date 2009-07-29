@@ -18,7 +18,9 @@ Comme dans tous les environnements de modélisation basés sur GMF, l'environnem
 [http://clacs.googlecode.com/files/FenetrePrincipaleAnnotee.png]
 
  * (a) : la fenêtre principale, où l'on va placer les divers éléments graphiques issus de la palette 
- * (b) : la palette d'outils permettant la création des nœuds et des liens 
+
+ * (b) : la palette d'outils permettant la création des nœuds et des liens
+ 
  * (c) : l'onglet des propriétés décrivant les propriétés de l'élément sélectionné sur la fenêtre principale 
 
 =Fonctionnalités=
@@ -30,7 +32,9 @@ L'architecture modélisée pourra successivement subit les différentes procédu
  * "Architecture GCLACS vers Architecture CLACS" : va générer un document en langage CLACS basé sur l'architecture modélisée
 
  * "Validation de l'architecture CLACS" : va vérifier diverses "lois" à respecter 
-exemple : tous les éléments doivent être nommés
+
+Exemple : tous les éléments doivent être nommés
+
  
 [http://clacs.googlecode.com/files/erreurValidation.png]
 
