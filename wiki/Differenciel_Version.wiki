@@ -2,7 +2,7 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 Sommaire :
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="4" />
 
 
 
