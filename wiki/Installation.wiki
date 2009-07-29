@@ -23,15 +23,15 @@ _A tester et à compléter_
 ==Avec Galileo Eclipse Modeling Tools==
 
 Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak)
- * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz  Galileo_Eclipse_Modeling_Tools_Version_Linux] 
- * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip Galileo_Eclipse_Modeling_Tools_Version_Windows] 
- * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz Galileo_Eclipse_Modeling_Tools_Version_Mac_Carbon] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz  Galileo Eclipse Modeling Tools Version Linux] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip Galileo Eclipse Modeling Tools Version Windows] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz Galileo Eclipse Modeling Tools Version Mac Carbon] 
 
 ==Sans Galileo Eclipse Modeling Tools==
 
 Télécharger et dézipper les dépendances 
-[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive_dépendance_Partie_1]
-[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive_dépendance_Partie_2]
+[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive dépendance Partie 1]
+[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive dépendance Partie 2]
 
 Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
@@ -48,7 +48,7 @@ Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant :
 ==Squeak ==
 
 Télécharger et dézipper l'archive Squeak
-[http://clacs.googlecode.com/files/Squeak.zip Archive_Squeak]
+[http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
 
 Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
 Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
@@ -56,6 +56,6 @@ Pour linux et Mac, des version à installer sont présentes dans le dossier Sque
 ==Plugin SoftConstraint==
 
 Télécharger le plugin SoftConstraint
-[http://clacs.googlecode.com/files/SoftConstraint.jar Plugin_SoftConstraint]
+[http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
