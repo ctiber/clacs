@@ -35,19 +35,12 @@ Ceux-ci sont présents dans le répertoire « dépendances » de l'archive
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
  
  # EMF 
-
  # Query 
-
  # Transaction 
-
  # Validation 
-
  # OCL 
-
  # UML 2.0 
-
  # GEF 
-
  # Orbit(map) 
 
 ==Squeak ==
