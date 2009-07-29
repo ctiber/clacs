@@ -30,9 +30,9 @@ Version Mac Carbon : [http://www.eclipse.org/downloads/download.php?file=/techno
 
 ==Sans Galileo Eclipse Modeling Tools==
 
-Télécharger les dépendances 
-[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Partie1]
-[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Partie2]
+Télécharger et dézipper les dépendances 
+[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive_dépendance_Partie_1]
+[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive_dépendance_Partie_2]
 
 Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
@@ -47,8 +47,14 @@ Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant :
  # Orbit(map) 
 
 ==Squeak ==
+
+Télécharger et dézipper l'archive Squeak
+[http://clacs.googlecode.com/files/Squeak.zip Archive_Squeak]
 Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
 Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
 
 ==Plugin SoftConstraint==
+
+Télécharger le plugin SoftConstraint
+[http://clacs.googlecode.com/files/SoftConstraint.jar Plugin_SoftConstraint]
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
