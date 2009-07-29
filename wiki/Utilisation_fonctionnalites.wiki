@@ -37,7 +37,45 @@ L'architecture modélisée pourra successivement subit les différentes procédu
 ==Architecture GCLACS vers Architecture CLACS==
 
 Va générer un document en langage CLACS basé sur l'architecture modélisée.
-(voir screen exemple CLACS)
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<cl:Component_Instance xmlns:cl="Metamodele/clacsCL" kind="business" name="instGlobalComp">
+<cl:DefinedByDescriptor>GlobalComp</cl:DefinedByDescriptor>
+	<cl:Component_Instance name="instCst">
+		<cl:DefinedByDescriptor>Cst</cl:DefinedByDescriptor>
+	</cl:Component_Instance>
+	<cl:Component_Instance name="instCst2">
+		<cl:DefinedByDescriptor>Cst2</cl:DefinedByDescriptor>
+	</cl:Component_Instance>
+	<cl:Component_Instance name="instComp">
+		<cl:DefinedByDescriptor>Comp</cl:DefinedByDescriptor>
+	</cl:Component_Instance>
+	<cl:Port name="PPGComp">
+		<cl:Direction>provided</cl:Direction>
+		<cl:Visibility>internal</cl:Visibility>
+		<cl:DefinedByInterface></cl:DefinedByInterface>
+	</cl:Port>
+	<cl:Port name="RPGComp">
+		<cl:Direction>required</cl:Direction>
+		<cl:Visibility>internal</cl:Visibility>
+		<cl:DefinedByInterface></cl:DefinedByInterface>
+	</cl:Port>
+	<cl:Binding name="bindCstCst2" glue="false" kind="simple">
+		<cl:Source>instCst.PPCst</cl:Source>
+		<cl:Target>instCst2.RPCst2</cl:Target>
+		<cl:UsedService name="serviceCst">
+		</cl:UsedService>
+	</cl:Binding>
+	<cl:Binding name="bindCst2Comp" glue="false" kind="simple">
+		<cl:Source>instCst2.PPCst2</cl:Source>
+		<cl:Target>instComp.RPComp</cl:Target>
+	</cl:Binding>
+	<cl:Binding name="bindCompGComp" glue="false" kind="delegation">
+		<cl:Source>instComp.PPComp</cl:Source>
+		<cl:Target>PPGComp</cl:Target>
+	</cl:Binding>
+</cl:Component_Instance>
+}}}
 
 ==Validation de l'architecture CLACS==
 Va vérifier diverses "lois" à respecter.
