@@ -1,5 +1,8 @@
 _Détaille les diverses composantes "techniques" du projet, pour permettre les mises à jour futures_
 
+Sommaire :
+
+<wiki:toc max_depth="4" />
 
 =Maintenance=
 
