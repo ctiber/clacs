@@ -82,6 +82,8 @@ Les nœuds Arg et Body font leur apparition et sont décrits par des "Custom Fig
 
 Un "Compartment" BodyArgsCompartments a été ajouté. Il appartiendra à l'élément Service permettant le stockage des Arg et Body. 
 
+[http://clacs.googlecode.com/files/gmfgraph23-07-09.png]
+
 ===Modifications gmfmap=== 
 
 La hiérarchie des éléments a été totalement revue. Elle a donc été adaptée pour ne plus contenir les descripteurs de composants, et s'est étendue pour gérer les nouveaux concepts comme le corps d'un service ou ses arguments. 
@@ -94,16 +96,16 @@ Ce modèle décrit le contenu de la palette servant à modéliser les éléments
 
 Il a donc subit peu de changement : la disparition de l'outil ComponentDescriptor, et l'apparition des outils Body et Arg. 
 
+[http://clacs.googlecode.com/files/gmftool23-07-09.png]
 
 ===Modification au niveau du code source===
 
  * Les classes régissant la gestion des items du menu du plugin GCLACS ont été retravaillées pour correspondre aux nouveaux modèles. 
-(voir screen)
  
  * Le langage de spécification CLACS et l'environnement GCLACS ayant subit des modifications, les opérations résultantes ont aussi été retravaillées.
 
-Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre. 
-(voir screen)
- Les interprétations tirant partie de binding plus évolués (AND, OR, XOR etc.) pour combiner les contraintes ne sont pas encore implémentées. Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. Le premier composant non contrainte trouvé sera le contexte.
+Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre.
+Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. Le premier composant non contrainte trouvé sera le contexte. 
+Les interprétations tirant partie de binding plus évolués (AND, OR, XOR etc.) pour combiner les contraintes ne sont pas encore implémentées. 
 
-(voir screen)
+[http://clacs.googlecode.com/files/exemplePropagationContexte.png]
