@@ -1,0 +1,1 @@
+_Détaille les diverses composantes "techniques" du projet, pour permettre les mises à jour futures_
