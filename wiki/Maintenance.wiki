@@ -38,6 +38,8 @@ Enfin, les répertoires CLACS et GCLACS sont respectivement les cœurs du langag
 
 CLACS contient le méta-métamodèle ecore permettant de modéliser les spécifications du langage CLACS. 
 
+==Modèles GMF==
+
 GCLACS comprend le méta-métamodèle ecore gérant les aspects graphiques relatifs à l'environnement GCLACS. Il est complété par un ensemble de modèles gmf (gmfgraph, gmfgen, gmfmap et gmftool) reliés entre eux. Le dashboard ci-dessous montre les relations qu'ont les modèles entre eux pour former l'environnement GCLACS.
 
 [http://clacs.googlecode.com/files/dashboard.png]
