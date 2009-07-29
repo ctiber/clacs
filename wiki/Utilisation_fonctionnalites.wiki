@@ -1,0 +1,30 @@
+_Une rapide synthèse des marches à suivre pour créer un projet clacs et un aperçu de ses fonctionnalités_
+
+=Créer un projet=
+
+Créer un nouveau Projet (New -> Project) (voir screen) 
+Une fois créé, il est possible d'y ajouter un document gclacs_diagram. Ce nouveau document est automatiquement ouvert avec l'environnement GCLACS. Un document de type gclacs est en même temps généré.(voir screen) 
+
+
+=Vue d'ensemble=
+
+Comme dans tous les environnements de modélisation basés sur GMF, l'environnement GCLACS se décompose en : 
+(voir screen) 
+
+a - la fenêtre principale, où l'on va placer les divers éléments graphiques issus de la palette 
+b - la palette d'outils permettant la création des nœuds et des liens 
+c - l'onglet des propriétés décrivant les propriétés de l'élément sélectionné sur la fenêtre principale 
+
+=Fonctionnalités=
+
+Une fois que l'architecture souhaitée est réalisée, il suffit d'aller dans le menu CLACS pour se servir des fonctionnalités du Plugin. 
+La fonctionnalité alors sélectionnée s'appliquera sur la page courante de l'éditeur graphique. En cas de mauvaise utilisation, un message précisera la cause du problème. 
+L'architecture modélisée pourra successivement subit les différentes procédures : 
+- "Architecture GCLACS vers Architecture CLACS" : va générer un document en langage CLACS basé sur l'architecture modélisée. 
+- "Validation de l'architecture CLACS" : va vérifier diverses "lois" à respecter 
+exemple : tous les éléments doivent être nommés 
+(voir screen) 
+-"Vérification des contraintes" : va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètre est différent du nombre d'arguments 
+(voir screens : tout OK, 1 erreur de validité, 1 erreur de syntaxe) 
+- "Architecture CLACS vers code SCL" : va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
+- "Charger dans Squeak" : va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant 
