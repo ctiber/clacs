@@ -1,6 +1,9 @@
 _Une rapide synthèse des marches à suivre pour créer un projet clacs et un aperçu de ses fonctionnalités_
 
+Sommaire :
+
 <wiki:toc max_depth="4" />
+
 
 =Créer un projet=
 
@@ -31,16 +34,22 @@ Une fois que l'architecture souhaitée est réalisée, il suffit d'aller dans le
 La fonctionnalité alors sélectionnée s'appliquera sur la page courante de l'éditeur graphique. En cas de mauvaise utilisation, un message précisera la cause du problème. 
 L'architecture modélisée pourra successivement subit les différentes procédures :
  
- * "Architecture GCLACS vers Architecture CLACS" : va générer un document en langage CLACS basé sur l'architecture modélisée
+=="Architecture GCLACS vers Architecture CLACS"==
 
- * "Validation de l'architecture CLACS" : va vérifier diverses "lois" à respecter 
+Va générer un document en langage CLACS basé sur l'architecture modélisée.
+(voir screen exemple CLACS)
+
+=="Validation de l'architecture CLACS"==
+Va vérifier diverses "lois" à respecter.
 
 Exemple : tous les éléments doivent être nommés
 
  
 [http://clacs.googlecode.com/files/erreurValidation.png]
 
- * "Vérification des contraintes" : va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètre est différent du nombre d'arguments.
+=="Vérification des contraintes"==
+
+Va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètre est différent du nombre d'arguments.
 Exemple d'analyse de contraintes valides :
 
 [http://clacs.googlecode.com/files/cstOK.png]
@@ -53,6 +62,12 @@ Exemple d'analyse de contraintes avec erreur de syntaxe OCL :
 
 [http://clacs.googlecode.com/files/cstErr.png]
 
- * "Architecture CLACS vers code SCL" : va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
+=="Architecture CLACS vers code SCL"==
 
- * "Charger dans Squeak" : va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant 
+Va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
+(voir screen exemple code SCL généré)
+
+=="Charger dans Squeak"==
+
+Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant
+(voir screen squeak)
