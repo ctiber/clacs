@@ -107,5 +107,3 @@ Il a donc subit peu de changement : la disparition de l'outil ComponentDescripto
 Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre.
 Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. Le premier composant non contrainte trouvé sera le contexte. 
 Les interprétations tirant partie de binding plus évolués (AND, OR, XOR etc.) pour combiner les contraintes ne sont pas encore implémentées. 
-
-[http://clacs.googlecode.com/files/exemplePropagationContexte.png]
