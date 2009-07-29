@@ -1,0 +1,46 @@
+_Explication du téléchargement et de l'installation du plugin Eclipse clacs_
+
+Sommaire :
+
+<wiki:toc max_depth="4" />
+
+= Téléchargement =
+
+Vous trouverez sur le dépot SVN :
+
+ * L'ensemble des codes sources des plugins
+
+ * Une archive contenant les dépendances
+
+ * La documentation permettant l'installation des plugins (équivalente à la prochaine partie "Installation")
+
+
+= Installation =
+
+_A tester et à completer_
+
+Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak)
+
+Version linux : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz] 
+Version windows : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip] 
+Version Mac Carbon : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz] 
+
+Pour les autres versions d'Eclipse : 
+Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
+Ceux-ci sont présents dans le répertoire « dépendances » de l'archive
+(cela revient à copier les .jar du dans le dossier plugin d'Eclipse) 
+-EMF 
+-Query 
+-Transaction 
+-Validation 
+-OCL 
+-UML 2.0 
+-GEF 
+-Orbit(map) 
+
+Squeak 
+Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
+Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
+
+Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
+
