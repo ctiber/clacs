@@ -8,7 +8,7 @@ Créer un nouveau Projet (New -> Project)
 
 Une fois créé, il est possible d'y ajouter un document gclacs_diagram. Ce nouveau document est automatiquement ouvert avec l'environnement GCLACS. Un document de type gclacs est en même temps généré.
 
-[http://clacs.googlecode.com/files/newGCLACSDiagram.png]
+[http://clacs.googlecode.com/files/newGCLACSDiagram2.png]
 
 
 =Vue d'ensemble=
@@ -44,7 +44,7 @@ Exemple d'analyse de contraintes invalides :
 
 Exemple d'analyse de contraintes avec erreur de syntaxe OCL :
 
-[http://clacs.googlecode.com/files/cstOK.png]
+[http://clacs.googlecode.com/files/cstErr.png]
 
  * "Architecture CLACS vers code SCL" : va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
 
