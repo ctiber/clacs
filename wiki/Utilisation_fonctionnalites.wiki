@@ -103,9 +103,39 @@ Exemple d'analyse de contraintes avec erreur de syntaxe OCL :
 ==Architecture CLACS vers code SCL==
 
 Va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
-(voir screen exemple code SCL généré)
+{{{
+(SclBuilder new: #GlobalComp
+	category: 'GlobalComp_category')
+	requiredPorts:{};
+	providedPorts:{}.
+
+GlobalComp compile: '
+init
+	|instCst instCst2 instComp |
+	instCst := Cst new.
+	instCst2 := Cst2 new.
+	instComp := Comp new.
+
+	(instCst port: #PPCst) bindTo: (instCst2 port: #RPCst2).
+	(instCst2 port: #PPCst2) bindTo: (instComp port: #RPComp).
+	(instComp port: #PPComp) bindTo: PPGComp.
+'.
+}}}
 
 ==Charger dans Squeak==
 
 Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant
-(voir screen squeak)
+
+[http://clacs.googlecode.com/files/squeak.png]
+
+Squeak est un éditeur graphique pour le langage SmallTalk (SCL étant un langage de composants basé sur SmallTalk)
+
+Les différentes fenêtres mise en avant sont :
+
+ * (1) : Permet de choisir la catégorie 
+ * (2) : Permet de selectionner le descripteur de composant
+ * (3) : Permet de choisir la catégorie de la méthode
+ * (4) : Affiche l'ensemble des méthodes correspondant à la catégorie
+ * (5) : Editeur pour éventuellement modifier la méthode
+ * (6) : Le workspace où l'on peut executer des commandes 
+ * (7) : Le transcript où les résultats sont visualisables
