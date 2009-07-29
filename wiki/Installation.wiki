@@ -50,6 +50,7 @@ Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant :
 
 Télécharger et dézipper l'archive Squeak
 [http://clacs.googlecode.com/files/Squeak.zip Archive_Squeak]
+
 Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
 Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
 
@@ -57,4 +58,5 @@ Pour linux et Mac, des version à installer sont présentes dans le dossier Sque
 
 Télécharger le plugin SoftConstraint
 [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin_SoftConstraint]
+
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
