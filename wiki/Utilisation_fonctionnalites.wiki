@@ -130,12 +130,18 @@ Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant
 
 Squeak est un éditeur graphique pour le langage SmallTalk (SCL étant un langage de composants basé sur SmallTalk)
 
-Les différentes fenêtres mise en avant sont :
+Les différentes fenêtres d'interaction sont :
 
  * (1) : Permet de choisir la catégorie 
+
  * (2) : Permet de selectionner le descripteur de composant
+
  * (3) : Permet de choisir la catégorie de la méthode
+
  * (4) : Affiche l'ensemble des méthodes correspondant à la catégorie
+
  * (5) : Editeur pour éventuellement modifier la méthode
+
  * (6) : Le workspace où l'on peut executer des commandes 
+
  * (7) : Le transcript où les résultats sont visualisables
