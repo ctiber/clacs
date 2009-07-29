@@ -107,8 +107,9 @@ Il a donc subit peu de changement : la disparition de l'outil ComponentDescripto
 Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre.
 Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. 
 Le premier composant non contrainte trouvé sera le contexte.
-Dans l'exemple ci-dessous, Cst et Cst2 sont deux composants contraintes, et Comp un composant métier.
-Cst va apporter une contrainte sur son contexte. Mais Cst étant connecté à Cst2 qui est lui aussi un composant contrainte, le contexte va se propager à Comp (vu que Cst2 est lui connecté à Comp). 
+
+Dans l'exemple ci-dessous (modélisé avec GCLACS), Cst et Cst2 sont deux composants contraintes, et Comp un composant métier.
+Cst va apporter une contrainte sur son contexte. Mais Cst étant connecté à Cst2 qui est lui aussi un composant contrainte, le contexte va se propager à Comp (vu que Cst2 est lui connecté à Comp) :
 
 [http://clacs.googlecode.com/files/exemplePropagationContexte.png]
 
