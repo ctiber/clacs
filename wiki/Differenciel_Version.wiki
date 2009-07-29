@@ -1,9 +1,9 @@
 _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
+<wiki:toc max_depth="2" />
+
+
 = Différentiel entre la version 1.0 et la version 1.1 =
-
-
-<wiki:toc max_depth="1" />
 
 
 *Une liste des principaux changements entre les 2 versions : *
