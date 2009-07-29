@@ -14,7 +14,8 @@ Une fois créé, il est possible d'y ajouter un document gclacs_diagram. Ce nouv
 =Vue d'ensemble=
 
 Comme dans tous les environnements de modélisation basés sur GMF, l'environnement GCLACS se décompose en : 
-(voir screen) 
+
+[http://clacs.googlecode.com/files/FenetrePrincipaleAnnotee.png]
 
  * (a) : la fenêtre principale, où l'on va placer les divers éléments graphiques issus de la palette 
  * (b) : la palette d'outils permettant la création des nœuds et des liens 
