@@ -1,6 +1,6 @@
 _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 
 = Différentiel entre la version 1.0 et la version 1.1 =
@@ -25,17 +25,17 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 
 
-= Détails =
+== Détails ==
 
 
 _Nous développerons ci-après les modifications apportées aux deux métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc._
 
-==Comparatif ancien / nouveau métamodèle CLACS==
+===Comparatif ancien / nouveau métamodèle CLACS===
 
 
-===Ancien métamodèle CLACS===
+====Ancien métamodèle CLACS====
 [http://clacs.googlecode.com/files/CLACS2.png]
-===Nouveau métamodèle CLACS===
+====Nouveau métamodèle CLACS====
 [http://clacs.googlecode.com/files/CLACS23-07-092.png]
 
 Le descripteur de composant(ComponentDescriptor), qui était l'élément central de l'ancien métamodèle a laissé place à l'instance de composant (ComponentInstance). Cela permet de voir un composant modélisé comme étant de base une instance d'un composant (décrivant le descripteur de ce composant). 
@@ -49,11 +49,11 @@ On peut voir que les notions d'AssemblyBinding et de DelegationBinding ont été
 L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind. (ces modifications induiront une modification du système d'interprétation des contraintes OCL). 
 Ils permettront d'effectuer des associations de contraintes. Par exemple, si deux composants contraintes sont connectés entre eux par un binding OR et que ceux-là sont reliés à un composant métier, ce dernier devra satisfaire l'une ou l'autre des contraintes. 
 
-==Comparatif ancien/ nouveau métamodèle GCLACS==
+===Comparatif ancien/ nouveau métamodèle GCLACS===
  
-===Ancien métamodèle GCLACS===
+====Ancien métamodèle GCLACS====
 [http://clacs.googlecode.com/files/GCLACS2.png]
-===Nouveau métamodèle GCLACS===
+====Nouveau métamodèle GCLACS====
 [http://clacs.googlecode.com/files/GCLACS23-07-092.png]
 
 Toutes les modifications apportées au métamodèle CLACS ont eu des répercutions sur ce métamodèle. 
@@ -66,7 +66,7 @@ Les éléments suivants ont été retravaillés :
  
  * Les binding disposent désormais d'un nom (pour pouvoir être identifié dans les contraintes OCL). Ils possèdent de plus un service utilisé (usedServiceName) et de la liste de ses paramètres (usedServiceArgs). 
  
-==Modifications gmfgraph== 
+===Modifications gmfgraph===
 
 Comme on peut le voir sur cette nouvelle version du gmfgraph, le noeud ComponentDescriptor et sa représentation associée a été retiré. 
 
@@ -76,20 +76,20 @@ Les nœuds Arg et Body font leur apparition et sont décrits par des "Custom Fig
 
 Un "Compartment" BodyArgsCompartments a été ajouté. Il appartiendra à l'élément Service permettant le stockage des Arg et Body. 
 
-==Modifications gmfmap== 
+===Modifications gmfmap=== 
 
 La hiérarchie des éléments a été totalement revue. Elle a donc été adaptée pour ne plus contenir les descripteurs de composants, et s'est étendue pour gérer les nouveaux concepts comme le corps d'un service ou ses arguments. 
 
 [http://clacs.googlecode.com/files/gmfmap23-07-09.png]
 
-==Modifications gmftool== 
+===Modifications gmftool=== 
 
 Ce modèle décrit le contenu de la palette servant à modéliser les éléments (Composant, Ports, Services etc.) dans l'environnement GCLACS. 
 
 Il a donc subit peu de changement : la disparition de l'outil ComponentDescriptor, et l'apparition des outils Body et Arg. 
 
 
-==Modification au niveau du code source :==
+===Modification au niveau du code source :===
 
  * Les classes régissant la gestion des items du menu du plugin GCLACS ont été retravaillées pour correspondre aux nouveaux modèles. 
 (voir screen)
