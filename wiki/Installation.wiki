@@ -30,7 +30,10 @@ Version Mac Carbon : [http://www.eclipse.org/downloads/download.php?file=/techno
 
 ==Sans Galileo Eclipse Modeling Tools==
 
-Télécharger les dépendances [http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Partie1]  [http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Partie2]
+Télécharger les dépendances 
+[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Partie1]
+[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Partie2]
+
 Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
  
