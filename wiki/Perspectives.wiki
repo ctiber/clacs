@@ -10,12 +10,17 @@ Sommaire :
 ==Perspectives graphiques==
 
  * Améliorer le placement des éléments (notamment les ports, sur les extrémités, à la manière de [http://forge.ow2.org/project/download.php?group_id=22&file_id=3532 FractalGUI]
+
  * Ajouter une charte graphique (code couleur, remplissage etc.) pour mettre en évidence certaines propriétés (visibilité des ports, kind des services etc...) 
+
  * Retravailler l'interface graphique affichant les résultats des contraintes OCL des composants 
-Disposer d'une palette de composants déjà modélisés, et pouvoir les placer directement sur l'environnement de modélisation
+
+ * Disposer d'une palette de composants déjà modélisés, et pouvoir les placer directement sur l'environnement de modélisation
 
 ==Techniques== 
 
- * Effectuer des batteries de tests complets pour ajouter la gestion des exceptions non traitées à l'heure actuelle. 
- * Implémenter les bindings spécifiques pour les composants (AND, OR, XOR, implies, negative, affirmative, functional) nuançant l'évaluation des contraintes OCL 
+ * Effectuer des batteries de tests complets pour ajouter la gestion des exceptions non traitées à l'heure actuelle.
+
+ * Implémenter les bindings spécifiques pour les composants (AND, OR, XOR, implies, negative, affirmative, functional) nuançant l'évaluation des contraintes OCL.
+
  * Ajouter un item au menu du Plugin offrant à l'utilisateur le choix de générer le code SCL d'une instance, ou d'un descripteur de composant 
