@@ -17,7 +17,7 @@ Vous trouverez sur le dépot SVN :
 
 = Installation =
 
-_A tester et à completer_
+_A tester et à compléter_
 
 Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak)
 
@@ -43,4 +43,3 @@ Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutabl
 Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
 
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
-
