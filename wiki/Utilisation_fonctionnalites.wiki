@@ -30,8 +30,12 @@ Comme dans tous les environnements de modélisation basés sur GMF, l'environnem
 
 =Fonctionnalités=
 
-Une fois que l'architecture souhaitée est réalisée, il suffit d'aller dans le menu CLACS pour se servir des fonctionnalités du Plugin.
+Une fois que l'architecture souhaitée est réalisée, il suffit d'aller dans le menu CLACS pour se servir des fonctionnalités du Plugin :
+
+
 [http://clacs.googlecode.com/files/menuPlugin.png] 
+
+
 La fonctionnalité alors sélectionnée s'appliquera sur la page courante de l'éditeur graphique. En cas de mauvaise utilisation, un message précisera la cause du problème. 
 L'architecture modélisée pourra successivement subit les différentes procédures :
  
