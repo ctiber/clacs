@@ -1,5 +1,7 @@
 _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
+Sommaire :
+
 <wiki:toc max_depth="3" />
 
 
@@ -89,7 +91,7 @@ Ce modèle décrit le contenu de la palette servant à modéliser les éléments
 Il a donc subit peu de changement : la disparition de l'outil ComponentDescriptor, et l'apparition des outils Body et Arg. 
 
 
-===Modification au niveau du code source :===
+===Modification au niveau du code source===
 
  * Les classes régissant la gestion des items du menu du plugin GCLACS ont été retravaillées pour correspondre aux nouveaux modèles. 
 (voir screen)
