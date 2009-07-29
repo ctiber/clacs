@@ -1,5 +1,7 @@
 _Une rapide synthèse des marches à suivre pour créer un projet clacs et un aperçu de ses fonctionnalités_
 
+<wiki:toc max_depth="4" />
+
 =Créer un projet=
 
 Créer un nouveau Projet (New -> Project)
