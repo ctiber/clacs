@@ -23,10 +23,9 @@ _A tester et à compléter_
 ==Avec Galileo Eclipse Modeling Tools==
 
 Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak)
-
-Version linux : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz] 
-Version windows : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip] 
-Version Mac Carbon : [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz  Galileo_Eclipse_Modeling_Tools_Version_Linux] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip Galileo_Eclipse_Modeling_Tools_Version_Windows] 
+ * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz Galileo_Eclipse_Modeling_Tools_Version_Mac_Carbon] 
 
 ==Sans Galileo Eclipse Modeling Tools==
 
