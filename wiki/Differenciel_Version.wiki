@@ -4,9 +4,9 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 *Une liste des principaux changements entre les 2 versions : *
 
- - Ajouts de nombreux tests / gestion d'exceptions limitant les crashs à la validation d'une architecture et augmentant le feedback
+ * Ajouts de nombreux tests / gestion d'exceptions limitant les crashs à la validation d'une architecture et augmentant le feedback
 
- - Modification des métamodèles CLACS (décrivant le langage) et GCLACS (décrivant l'environnement graphique), voir comparatif des métamodèles 
+ * Modification des métamodèles CLACS (décrivant le langage) et GCLACS (décrivant l'environnement graphique), voir comparatif des métamodèles 
 
  - Modification des modèles GMF (gmfgraph, gmftool, gmfmap, gmfgen) voir comparatif des modèles GMF 
 
