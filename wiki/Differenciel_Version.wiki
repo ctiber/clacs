@@ -23,6 +23,9 @@ _Explicite les principales différences entre la version 1.0 et la version 1.1_
 
 = Détails =
 
+
+_Nous développerons ci-après les modifications apportées au 2 méta-métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc._
+
 ==Comparatif ancien / nouveau métamodèle CLACS==
 
 
