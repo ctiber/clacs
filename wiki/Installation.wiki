@@ -34,21 +34,21 @@ Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant :
 Ceux-ci sont présents dans le répertoire « dépendances » de l'archive
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
  
- * EMF 
+ # EMF 
 
- * Query 
+ # Query 
 
- * Transaction 
+ # Transaction 
 
- * Validation 
+ # Validation 
 
- * OCL 
+ # OCL 
 
- * UML 2.0 
+ # UML 2.0 
 
- * GEF 
+ # GEF 
 
- * Orbit(map) 
+ # Orbit(map) 
 
 ==Squeak ==
 Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
