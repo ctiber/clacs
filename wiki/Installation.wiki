@@ -28,18 +28,27 @@ Version Mac Carbon : [http://www.eclipse.org/downloads/download.php?file=/techno
 Pour les autres versions d'Eclipse : 
 Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
 Ceux-ci sont présents dans le répertoire « dépendances » de l'archive
-(cela revient à copier les .jar du dans le dossier plugin d'Eclipse) 
--EMF 
--Query 
--Transaction 
--Validation 
--OCL 
--UML 2.0 
--GEF 
--Orbit(map) 
+(cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
+ 
+ * EMF 
 
-Squeak 
+ * Query 
+
+ * Transaction 
+
+ * Validation 
+
+ * OCL 
+
+ * UML 2.0 
+
+ * GEF 
+
+ * Orbit(map) 
+
+==Squeak ==
 Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
 Pour linux et Mac, des version à installer sont présentes dans le dossier Squeak. 
 
+==Plugin SoftConstraint==
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
