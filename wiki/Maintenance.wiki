@@ -1,1 +1,37 @@
 _Détaille les diverses composantes "techniques" du projet, pour permettre les mises à jour futures_
+
+
+=Maintenance=
+
+==Pour débuter==
+
+Pour bien se familiariser avec les notions élémentaires du projet : 
+ * [http://www.eclipse.org/articles/Article-Using%20EMF/using-emf.html Tutorial_EMF]
+
+ * [http://wiki.eclipse.org/index.php/GMF_Tutorial Tutorial_GMF]
+
+ * [http://wiki.eclipse.org/GMF_Documentation_Index Notions_plus_avancees]
+
+==Détail des fichiers sources==
+
+Parmi les répertoires sources, CLACS.edit, CLACS.editor, CLACS.tests, GCLACS.edit, GCLACS.editor, GCLACS.tests sont des codes sources générés à partir des modèles emf et gmf. Il ne semble pas nécessaire de les modifier à l'heure actuelle. 
+Le répertoire GCLACS.diagram est lui aussi généré, mais doit parfois être modifié manuellement (notamment pour personnaliser l'environnement avec de nouvelles classes). 
+Le répertoire CLACStoSCL_Plugin centralise les interactions possibles avec la modélisation graphique réalisée (1 classe par item du menu du plugin et un package pour la génération du code SCL). 
+Le répertoire CLACS_OCLConst correspond à l'analyseur de contraintes OCL.
+Bien penser à générer un nouveau jar exécutable pour que GCLACS le prenne en compte.
+Voici le diagramme de classe explicitant la structure du plugin de contrainte :
+(voir screen)
+Les choses ont été simplifiées par clarté. 
+ * La classe centrale « CaseAnalysis » va effectuer une analyse de cas des fichiers clacs pris en entrée. selon les types rencontrés, la classe Parsing correspondante sera utilisée. 
+
+ * La classe AccessorModel comprend un ensemble d'accesseurs pour le modèle instancié spécifié par le métamodèle GCLACS.
+
+ * La classe SerializerXMI permet de sérialiser le modèle instancié en XMI, pour y effectuer des vérifications, tests etc.
+
+ * La classe ConstraintInterpretor gère l'interprétation des contraintes OCL du modèle.
+
+ * FenetreGUI est la classe gérant l'interface graphique, SoftConstraint est la classe contenant la fonction main. 
+Enfin, les répertoires CLACS et GCLACS sont respectivement les cœurs du langage CLACS et celui de l'environnement graphique GCLACS. 
+CLACS contient le méta-métamodèle ecore permettant de modéliser les spécifications du langage CLACS. 
+GCLACS comprend le méta-métamodèle ecore gérant les aspects graphiques relatifs à l'environnement GCLACS. Il est complété par un ensemble de modèles gmf (gmfgraph, gmfgen, gmfmap et gmftool) reliés entre eux. Le dashboard ci-dessous montre les relations qu'ont les modèles entre eux pour former l'environnement GCLACS.
+(voir screen dashboard) 
