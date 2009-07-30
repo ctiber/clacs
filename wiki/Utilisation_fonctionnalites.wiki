@@ -42,6 +42,9 @@ L'architecture modélisée pourra successivement subit les différentes procédu
 ==Architecture GCLACS vers Architecture CLACS==
 
 Va générer un document en langage CLACS basé sur l'architecture modélisée.
+
+Exemple de document CLACS généré :
+
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
 <cl:Component_Instance xmlns:cl="Metamodele/clacsCL" kind="business" name="instGlobalComp">
@@ -92,7 +95,8 @@ Exemple : tous les éléments doivent être nommés
 
 ==Vérification des contraintes==
 
-Va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètre est différent du nombre d'arguments.
+Va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètres est différent du nombre d'arguments.
+
 Exemple d'analyse de contraintes valides :
 
 [http://clacs.googlecode.com/files/cstOK.png]
@@ -107,7 +111,10 @@ Exemple d'analyse de contraintes avec erreur de syntaxe OCL :
 
 ==Architecture CLACS vers code SCL==
 
-Va générer le squelette du code SCL de l'architecture de composant décrite par le fichier CLACS sélectionné 
+Va générer le squelette du code SCL de l'architecture de composants décrite par le fichier CLACS sélectionné.
+
+Exemple de document SCL généré :
+
 {{{
 (SclBuilder new: #GlobalComp
 	category: 'GlobalComp_category')
@@ -129,7 +136,9 @@ init
 
 ==Charger dans Squeak==
 
-Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant
+Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant.
+
+Une capture d'écran de Squeak :
 
 [http://clacs.googlecode.com/files/squeak.png]
 
