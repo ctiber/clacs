@@ -132,3 +132,4 @@ _nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
 Le projet ne devrait plus avoir d'erreurs (si c'est le cas, ajouter les dépendances manquantes de la même manière, elles seront signalées par l'onglet "problems" d'Eclipse.
 
 Pour le compiler, il suffit de lancer CLACS en tant qu'"Eclipse Application"(click droit sur le projet CLACS, Run as -> Eclipse Application, ou le raccourci Shift + Alt + X enfoncés, puis E)
+La version d'Eclipse ainsi lancée disposera du plugin CLACS 1.1. L'utilisation du plugin CLACS est expliqué dans la partie [http://code.google.com/p/clacs/wiki/Utilisation_fonctionnalites Utilisation et Fonctionnalités]
