@@ -6,14 +6,11 @@ Sommaire :
 
 = Téléchargement =
 
-Vous trouverez sur le dépot SVN :
+ * L'ensemble des codes sources des plugins sur le dépôt SVN
 
- * L'ensemble des codes sources des plugins
+ * Deux archives contenant les dépendances (voir liens plus bas)
 
- * Une archive contenant les dépendances
-
- * La documentation permettant l'installation des plugins (équivalente à la prochaine partie "Installation")
-
+ * Squeak et le plugin SoftConstraint (voir liens plus bas)
 
 = Installation =
 
