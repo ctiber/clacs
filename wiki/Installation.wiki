@@ -46,7 +46,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
  # GEF 
  # Orbit(map) 
 
-==Installation de Squeak et du Plugin SoftConstraint ==
+==Installation de Squeak et du Plugin de contraintes SoftConstraint ==
 
 ===Squeak===
 
