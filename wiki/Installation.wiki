@@ -71,7 +71,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
  * Il est désormais possible de créer un nouveau Checkout SVN. (New-> SVN ->Checkout Projets from SVN)
 
- * Cochez "Create New SVN", et entrez l'url : https://clacs.googlecode.com/svn/trunk/
+ * Cochez "Create a new repository location", et entrez l'url : https://clacs.googlecode.com/svn/trunk/
 
  * Une fenêtre récapitule l'ensemble des dossiers du projet, selectionnez tous les dossiers et terminez.
 
