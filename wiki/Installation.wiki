@@ -28,9 +28,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
 ==Sans Galileo Eclipse Modeling Tools==
 
- * Télécharger et dézipper les dépendances 
-[http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive dépendance Partie 1]
-[http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive dépendance Partie 2]
+ * Télécharger et dézipper les dépendances [http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive dépendance Partie 1] [http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive dépendance Partie 2]
 
  * Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
 (cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
@@ -46,16 +44,14 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
 ==Squeak ==
 
- * Télécharger et dézipper l'archive Squeak
-[http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
+ * Télécharger et dézipper l'archive Squeak [http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
 
  * Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
  * Pour Linux et Mac, des versions à installer sont présentes dans le dossier Squeak. 
 
 ==Plugin SoftConstraint==
 
- * Télécharger le plugin SoftConstraint
-[http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
+ * Télécharger le plugin SoftConstraint [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
  * Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
 
