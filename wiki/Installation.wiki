@@ -94,13 +94,16 @@ Ajoutez les dépendances suivantes (propriété sur le projet->java build path -
 _nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
 
 ====Projet CLACS====
+
  * org.eclipse.emf.ocl_1.1.1.v200709121956 (répertoire mdt-ocl-SDK-1.1.2/eclipse/plugins des dépendances)
 
 ====Projet CLACStoSCL_Plugin====
+
  * org.eclipse.emf.ecore_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
 
 ====Projet CLACS_OCLConst====
-* org.eclipse.emf.common_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
+
+ * org.eclipse.emf.common_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
 
  * org.eclipse.emf.ecore_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
 
