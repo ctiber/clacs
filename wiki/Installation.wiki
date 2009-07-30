@@ -59,3 +59,7 @@ Télécharger le plugin SoftConstraint
 [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
 Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
+
+==Récuperation du mot de passe du dépôt SVN==
+Aller sur le site http://code.google.com/p/clacs/ et s'authentifier avec les identifiants de votre compte.
+Aller sur l'onglet Sources et cliquez sur le lien "googlecode.com password" et gardez le mot de passe ainsi généré.
