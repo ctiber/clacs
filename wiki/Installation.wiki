@@ -55,7 +55,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
  * Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
  * Pour Linux et Mac, des versions à installer sont présentes dans le dossier Squeak. 
 
-===Plugin SoftConstraint===
+===Plugin de contraintes SoftConstraint===
 
  * Télécharger le plugin SoftConstraint [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
