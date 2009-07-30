@@ -86,3 +86,40 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
  * Une fenêtre récapitule l'ensemble des dossiers du projet, selectionnez tous les dossiers et terminez.
 
  * L'ensemble des répertoires du projet est ajouté au Workspace.
+
+===Résolution des dépendances manquantes===
+
+Ajoutez les dépendances suivantes (propriété sur le projet->java build path -> libraries) 
+
+_nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
+
+====Projet CLACS====
+ * org.eclipse.emf.ocl_1.1.1.v200709121956 (répertoire mdt-ocl-SDK-1.1.2/eclipse/plugins des dépendances)
+
+====Projet CLACStoSCL_Plugin====
+ * org.eclipse.emf.ecore_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
+
+====Projet CLACS_OCLConst====
+* org.eclipse.emf.common_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
+
+ * org.eclipse.emf.ecore_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
+
+ * org.eclipse.emf.ocl_1.1.1.v200709121956(répertoire mdt-ocl-SDK-1.1.2/eclipse/plugins des dépendances)
+
+ * org.eclipse.emf.ecore.xmi_2.5.0.v200906151043(répertoire plugins d'eclipse)
+
+ * org.eclipse.core.commands_3.5.0.I20090525-2000(répertoire plugins d'eclipse)
+
+ * org.eclipse.core.resources_3.5.0.v20090512(répertoire plugins d'eclipse)
+
+ * org.eclipse.equinox.registry_3.4.100.v20090520-1800(répertoire plugins d'eclipse)
+
+ * org.eclipse.gmf.runtime.diagram.ui_1.2.0.v20090526-1925(répertoire plugins d'eclipse)
+
+ * org.eclipse.gmf.runtime.diagram.ui.resources.editor_1.2.0.v20090526-1925(répertoire plugins d'eclipse)
+
+ * org.eclipse.gmf.runtime.notation_1.2.0.v20090521-1925(répertoire plugins d'eclipse)
+
+ * org.eclipse.ui.view.properties.tabbed_3.5.0.I20090429-1800(répertoire plugins d'eclipse)
+
+ * org.eclipse.ui.workbench_3.5.0.I20090603-2000(répertoire plugins d'eclipse)
