@@ -11,7 +11,7 @@ Créer un nouveau Projet (New -> Project)
 
 [http://clacs.googlecode.com/files/newProject.png]
 
-Une fois créé, il est possible d'y ajouter un document gclacs_diagram. Ce nouveau document est automatiquement ouvert avec l'environnement GCLACS. Un document de type gclacs est en même temps généré.
+Une fois créé, il est possible d'y ajouter un document gclacs_diagram.(Click droit sur le nouveau projet créé ->New->Other...) Ce nouveau document est automatiquement ouvert avec l'environnement GCLACS. Un document de type gclacs est en même temps généré.
 
 [http://clacs.googlecode.com/files/newGCLACSDiagram2.png]
 
