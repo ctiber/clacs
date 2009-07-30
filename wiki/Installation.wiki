@@ -60,5 +60,19 @@ Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Ecli
 ==Récuperation du mot de passe du dépôt SVN==
  * Aller sur le site http://code.google.com/p/clacs/ et s'authentifier avec les identifiants de votre compte.
 
-
  * Aller sur l'onglet Sources et cliquez sur le lien "googlecode.com password" et gardez le mot de passe ainsi généré.
+
+==Installation de Subclipse Tigris==
+ * Pour cela, ajoutez l'url suivante dans l'outil de mise à jour d'eclipse (help, install new software) : http://subclipse.tigris.org/update_1.6.x
+
+ * Selectionnez subclipse et ses dépendances et lancez l'installation
+
+==Récupération du projet sur le dépôt SVN==
+
+ * Il est désormais possible de créer un nouveau Checkout SVN. (New-> SVN ->Checkout Projets from SVN)
+
+ * Cochez "Create New SVN", et entrez l'url : https://clacs.googlecode.com/svn/trunk/
+
+ * Une fenêtre récapitule l'ensemble des dossiers du projet, selectionnez tous les dossiers et terminez.
+
+ * L'ensemble des répertoires du projet est ajouté au Workspace.
