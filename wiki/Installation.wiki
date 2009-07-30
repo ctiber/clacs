@@ -71,7 +71,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
 ===Installation de Subclipse Tigris===
 
- * Pour cela, ajoutez l'url suivante dans l'outil de mise à jour d'eclipse (help, install new software) : `http://subclipse.tigris.org/update_1.6.x
+ * Pour cela, ajoutez l'url suivante dans l'outil de mise à jour d'eclipse (help, install new software) : `http://subclipse.tigris.org/update_1.6.x`
 
  * Selectionnez subclipse et ses dépendances et lancez l'installation
 
