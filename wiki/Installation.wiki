@@ -4,7 +4,7 @@ Sommaire :
 
 <wiki:toc max_depth="4" />
 
-= Téléchargement =
+= Récapitulatif des téléchargements =
 
  * L'ensemble des codes sources des plugins sur le dépôt SVN
 
