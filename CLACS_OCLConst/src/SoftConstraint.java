@@ -1,4 +1,3 @@
-import groovy.swing.factory.BoxFactory.GlueFactory;
 
 import java.awt.Color;
 import java.awt.Container;
