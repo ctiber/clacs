@@ -16,10 +16,13 @@ Sommaire :
 
 _A tester et à compléter_
 
+==Eclipse==
 
 ==Avec Galileo Eclipse Modeling Tools==
 
-Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak)
+Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak) et des problèmes de dépendances. 
+_Nb : Nous recommandons fortement d'installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools. Installer cette version d'Eclipse sur un ordinateur possédant une autre version d'Eclipse n'affectera en rien la version déjà installée. Il suffit d'installer la nouvelle version à un autre endroit. Les deux versions pourront par ailleurs disposer d'un workspace chacun, mais pourront éventuellement partager le même._
+
  * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz  Galileo Eclipse Modeling Tools Version Linux] 
 
  * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-win32.zip Galileo Eclipse Modeling Tools Version Windows] 
