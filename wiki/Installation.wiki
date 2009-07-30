@@ -89,7 +89,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
 ===Résolution des dépendances manquantes===
 
-Ajoutez les dépendances suivantes (propriété sur le projet->java build path -> libraries) 
+Ajoutez les dépendances suivantes (sur le projet concerné : click droit -> Properties ->Java build path -> Libraries) 
 
 _nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
 
