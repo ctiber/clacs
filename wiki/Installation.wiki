@@ -16,9 +16,9 @@ Sommaire :
 
 _A tester et à compléter_
 
-==Eclipse==
+==Installation Eclipse et ses plugins==
 
-==Avec Galileo Eclipse Modeling Tools==
+===Avec Galileo Eclipse Modeling Tools===
 
 Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak) et des problèmes de dépendances. 
 
@@ -30,7 +30,7 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
  * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz Galileo Eclipse Modeling Tools Version Mac Carbon] 
 
-==Sans Galileo Eclipse Modeling Tools==
+===Sans Galileo Eclipse Modeling Tools===
 
  * Télécharger et dézipper les dépendances [http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive dépendance Partie 1] [http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive dépendance Partie 2]
 
@@ -46,32 +46,36 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
  # GEF 
  # Orbit(map) 
 
-==Squeak ==
+==Installation de Squeak et SoftConstraint==
+
+===Squeak===
 
  * Télécharger et dézipper l'archive Squeak [http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
 
  * Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
  * Pour Linux et Mac, des versions à installer sont présentes dans le dossier Squeak. 
 
-==Plugin SoftConstraint==
+===Plugin SoftConstraint===
 
  * Télécharger le plugin SoftConstraint [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
  * Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
 
-==Récuperation du mot de passe du dépôt SVN==
+==Installation du projet==
+
+===Récuperation du mot de passe du dépôt SVN===
 
  * Aller sur le site http://code.google.com/p/clacs/ et s'authentifier avec les identifiants de votre compte.
 
  * Aller sur l'onglet Sources et cliquez sur le lien "googlecode.com password" et gardez le mot de passe ainsi généré.
 
-==Installation de Subclipse Tigris==
+===Installation de Subclipse Tigris===
 
  * Pour cela, ajoutez l'url suivante dans l'outil de mise à jour d'eclipse (help, install new software) : http://subclipse.tigris.org/update_1.6.x
 
  * Selectionnez subclipse et ses dépendances et lancez l'installation
 
-==Récupération du projet sur le dépôt SVN==
+===Récupération du projet sur le dépôt SVN===
 
  * Il est désormais possible de créer un nouveau Checkout SVN. (New-> SVN ->Checkout Projets from SVN)
 
