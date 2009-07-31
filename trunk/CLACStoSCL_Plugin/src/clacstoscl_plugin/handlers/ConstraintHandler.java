@@ -171,7 +171,8 @@ public class ConstraintHandler extends AbstractHandler {
 		 		 //System.out.println("chemin is : " + System.getProperty("user.dir").toString());
 
 		 		 //System.out.println("chemin : " + ConstraintHandler.class.getResource("ConstraintHandler.class").getPath());
-		 		 String command =  System.getProperty("user.dir") + "/SoftConstraint.jar" + fileCommand;
+		 		 String nomPlug = System.getProperty("user.dir").replace("\\", "/");
+		 		 String command =  nomPlug + "/SoftConstraint.jar" + fileCommand;
 				 System.out.println("commande : " + command);
 				 Runtime runtime = Runtime.getRuntime();
 				 runtime.exec(command);
