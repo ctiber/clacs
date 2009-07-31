@@ -10,6 +10,7 @@ import org.eclipse.emf.ocl.query.QueryFactory;
 
 import GCLACS.Arg;
 import GCLACS.Binding;
+import GCLACS.BindingKind;
 import GCLACS.BodyType;
 import GCLACS.ComponentInstance;
 import GCLACS.ComponentKind;
@@ -41,7 +42,7 @@ public class ConstraintInterpretor {
 					
 					//determination du contexte
 					ComponentInstance compBody = getComponentInstanceWithConstraint(constraintB, DR);
-					if(compBody.equals("null")){
+					if(compBody.equals("null") || compBody.equals("")){
 						JLabel JError = new JLabel("Le corps de la contrainte est vide !");
 						JError.setForeground(Color.red);
 						FG.contentError.add(JError);
@@ -174,7 +175,7 @@ public class ConstraintInterpretor {
 	
 	
 	/* transforme le tokenizer st en array list */
-	public static ArrayList<String> transformST(StringTokenizer st){
+	public ArrayList<String> transformST(StringTokenizer st){
 		ArrayList<String> listST = new ArrayList<String>();
 		while(st.hasMoreTokens()){
 			listST.add(st.nextToken());
@@ -185,7 +186,7 @@ public class ConstraintInterpretor {
 	
 	
 	/* fonction retournant le composant contrainte contenant la contrainte b*/
-	public static ComponentInstance getComponentInstanceWithConstraint(BodyType b, Document_Root DR){
+	public ComponentInstance getComponentInstanceWithConstraint(BodyType b, Document_Root DR){
 		ComponentInstance CI;
 		Interface I = GCLACSFactory.eINSTANCE.createInterface();
 		Services S = GCLACSFactory.eINSTANCE.createServices();
@@ -211,9 +212,9 @@ public class ConstraintInterpretor {
 	
 	
 	/* retourne la liste des parametres correspondant au service s*/
-	public static String getListParamWithService(Services s, Document_Root DR){
+	public String getListParamWithService(Services s, Document_Root DR){
 		String listParam = "";
-		//on récuppere le nom du service
+		//on recuppere le nom du service
 		String nomService = s.getName();
 		
 		List<ComponentInstance> ListCI = DR.getComponentInstance().getComponentInstance();
@@ -237,8 +238,8 @@ public class ConstraintInterpretor {
 	}
 	
 	
-	/* retourne true si tous les arguments du services sont présents dans la contrainte, faux sinon*/
-	public static boolean allArgumentsPresents(String constraint, List<Arg> listArg){
+	/* retourne true si tous les arguments du services sont presents dans la contrainte, faux sinon*/
+	public boolean allArgumentsPresents(String constraint, List<Arg> listArg){
 		for(int i = 0; i < listArg.size(); i++){
 			if(!constraint.contains(listArg.get(i).getName())){
 				return false;
@@ -248,11 +249,11 @@ public class ConstraintInterpretor {
 	}
 	
 	
-	/* fonction retournant tous les composants liés au composant c1 
+	/* fonction retournant tous les composants lies au composant c1 
 	 * par un binding avec c1 en port fournis externe (on suppose que le 
 	 * composant contrainte c1 va fournir sa contrainte) 
 	 * */
-	public static ComponentInstance getListComponentInstanceLinkWithComp(ComponentInstance c1, Document_Root DR){
+	public ComponentInstance getListComponentInstanceLinkWithComp(ComponentInstance c1, Document_Root DR){
 		ComponentInstance CompI = GCLACSFactory.eINSTANCE.createComponentInstance();
 		ArrayList<Port> listPort = new ArrayList<Port>();
 		ArrayList<Port> listPortCompoDest = new ArrayList<Port>();
@@ -267,7 +268,7 @@ public class ConstraintInterpretor {
 		
 		//pour chaque port de la liste
 		for(int j = 0; j < listPort.size(); j++){
-			//on va parser tout les binding et trouver ceux ou les ports de listPort sont présents
+			//on va parser tout les binding et trouver ceux ou les ports de listPort sont presents
 			for(int i =0; i < DR.getComponentInstance().getBinding().size(); i++){
 				Binding bCurrent = DR.getComponentInstance().getBinding().get(i);
 				if(am.adaptPort(bCurrent.getSource().getName()).equals(am.adaptPort(listPort.get(j).getName()))){
@@ -295,8 +296,12 @@ public class ConstraintInterpretor {
 			}
 		}
 		
-		//pour chaque composant ajouté, on regarde si le composant est un composant contrainte
+		//pour chaque composant ajoute, on regarde si le composant est un composant contrainte
 		//si c'est le cas, on le supprime et on relance la fonction
+		//TODO creer une liste des composants lies entre eux avec leur type de binding
+		//interpreter systematiquement le resultat d'un composant contrainte analyse le stocker
+		//une fois le groupe de composant au complet, faire l'analyse finale
+		//en fonction des resultats et du binding
 		if(CompI.getKind().equals(ComponentKind.CONSTRAINT)){
 			CompI = getListComponentInstanceLinkWithComp(CompI, DR);
 		}
@@ -304,8 +309,33 @@ public class ConstraintInterpretor {
 		return CompI;
 	}
 	
+	/*
+	 * fonction qui prend un ensemble de 2 contraintes connect�es entre elles et son binding
+	 * retourne le resultat final  
+	 */
+	public boolean resultConstraints(LinkedConstraint lc){
+		boolean value = false;
+		/*
+		switch (lc.bindType){
+			case BindingKind.AND :
+				value = lc.constResult2 & lc.constResult2;
+				break;
+			case BindingKind.OR :
+				value = lc.constResult1 | lc.constResult2;
+				break;
+			case BindingKind.XOR :
+				value = lc.constResult1 ^ lc.constResult2;
+				break;
+			case BindingKind.IMPLIES :
+				value = !lc.constResult1 || lc.constResult2;
+				break;
+		}
+		*/
+		return value;
+	}
+	
 	//prend la liste des arguments et leurs valeurs et retourne les objets correspondants
-	public static String getListArgQ(List<Arg> listArg, ArrayList<String> list, String requete, Document_Root DR, FenetreGUI FG){
+	public String getListArgQ(List<Arg> listArg, ArrayList<String> list, String requete, Document_Root DR, FenetreGUI FG){
 		Object ArgQ = null;
 		String TypeArgQ =""; //string representant le type de l'argument
 		ArrayList<Object> listArgQ = new ArrayList<Object>(); //liste qui va stocker l'ensemble des objets arguments
@@ -351,8 +381,8 @@ public class ConstraintInterpretor {
 	}
 	
 	
-	/* va générer une contrainte paramétrés en fonction de la contraint, de l'argument et de la valeur de cet argument */
-	public static String generateNewConstraint(String typeArg, String nomArg, String token, String constraint){
+	/* va generer une contrainte parametres en fonction de la contraint, de l'argument et de la valeur de cet argument */
+	public String generateNewConstraint(String typeArg, String nomArg, String token, String constraint){
 		String ajoutRequete = "";
 		
 		if(typeArg.equals("Component_Instance")){
@@ -376,10 +406,10 @@ public class ConstraintInterpretor {
 	
 	
 	
-	/* créé une string faisant la correspondance entre les arguments et leur valeur
+	/* cree une string faisant la correspondance entre les arguments et leur valeur
 	 * de la forme nomArg1(typeArg1) = valeur1 nomArg2(typeArg2) = valeur2 etc...
 	 *  */
-	public static String correspondanceArgValue(List<Arg> listArg, ArrayList<String> list){
+	public String correspondanceArgValue(List<Arg> listArg, ArrayList<String> list){
 		String correspondance = "";
 		
 		for(int i = 0; i < listArg.size(); i++){
