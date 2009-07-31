@@ -51,3 +51,31 @@ CLACS contient le méta-métamodèle ecore permettant de modéliser les spécifi
 GCLACS comprend le méta-métamodèle ecore gérant les aspects graphiques relatifs à l'environnement GCLACS. Il est complété par un ensemble de modèles gmf (gmfgraph, gmfgen, gmfmap et gmftool) reliés entre eux. Le dashboard ci-dessous montre les relations qu'ont les modèles entre eux pour former l'environnement GCLACS.
 
 [http://clacs.googlecode.com/files/dashboard.png]
+
+
+===Génération du code basé sur les modèles===
+
+Lorsque l'on effectue des modifications sur le métamodèle ecore, il faut recharger le modèle genmodel. (Click droit sur le genmodel -> reload)
+
+Une fois celui-ci rechargé, il suffit de faire un click droit dessus et faire "Generate All".
+
+Lorsque des modifcations sont apportées au modèle gmfgraph, il faut regénérer les figures associées (Click droit -> Generate Figure Plug in), le nom du "main plugin" à mettre est "CLACS".
+
+Si le modèle gmfmap est modifié, il faut créer le "Generator Model" (Clik droit).
+
+Le modèle gmfgen centralise les modifications de tous les modèles, il faut donc le mettre à jour une fois que l'un des modèles à été mis à jour. (Click droit -> Generate Diagram Code). 
+
+/!\ Lors de la génération de code, le code existant est écrasé même si des modifications manuelles ont été apportées. Pour y remédier, il suffit de faire précéder la fonction à ne pas regénérer par le mot clé NOT derrière la mention generated.
+
+Exemple :
+{{{
+
+	/**
+	 * @generated NOT
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(getMapMode()
+				.DPtoLP(40), getMapMode().DPtoLP(40));
+		return result;
+	}
+}}}
