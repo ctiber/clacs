@@ -4,6 +4,5 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/GCLACS.diagram"/>
-	<classpathentry kind="lib" path="C:/Users/Nicolas/Downloads/Dépendances/mdt-ocl-SDK-1.1.2/eclipse/plugins/org.eclipse.emf.ocl_1.1.1.v200709121956.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
