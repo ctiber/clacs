@@ -1,8 +1,7 @@
 package CLACS;
 
 import org.eclipse.draw2d.FlowLayout;
-import org.eclipse.draw2d.RectangleFigure;
-import org.eclipse.emf.ocl.query.QueryFactory;
+
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 
 import GCLACS.diagram.figures.CustomFigureArg;
