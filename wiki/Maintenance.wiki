@@ -1,38 +1,38 @@
-_Détaille les diverses composantes "techniques" du projet, pour permettre les mises à jour futures_
+_Details the various "technical" components of the project in order to allow the future updates_
 
-Sommaire :
+Summary:
 
 <wiki:toc max_depth="4" />
 
 =Maintenance=
 
-==Pour débuter==
+==To Start==
 
-Pour bien se familiariser avec les notions élémentaires du projet : 
+To become familiar with the basics of the project: 
  * [http://www.eclipse.org/articles/Article-Using%20EMF/using-emf.html Tutorial EMF]
 
  * [http://wiki.eclipse.org/index.php/GMF_Tutorial Tutorial GMF]
 
  * [http://wiki.eclipse.org/GMF_Documentation_Index Notions plus avancees]
 
-==Détail des fichiers sources==
+==Details of source files==
 
 
-===Fichiers sources générés (inutiles de modifier) ===
-Parmi les répertoires sources, CLACS.edit, CLACS.editor, CLACS.tests, GCLACS.edit, GCLACS.editor, GCLACS.tests sont des codes sources générés à partir des modèles emf et gmf. Il ne semble pas nécessaire de les modifier à l'heure actuelle.
+===Generated source files (unnecessary to modify) ===
+Omong the source repertory CLACS.edit, CLACS.editor, CLACS.tests, GCLACS.edit, GCLACS.editor, GCLACS.tests are generated from emf and gmf models. It does not seem that it is necessary to modify them. 
 
-===Fichiers sources générés (possible besoin de modifier) ===
-Le répertoire GCLACS.diagram est lui aussi généré, mais doit parfois être modifié manuellement (notamment pour personnaliser l'environnement avec de nouvelles classes). 
-Le répertoire CLACStoSCL_Plugin centralise les interactions possibles avec la modélisation graphique réalisée (1 classe par item du menu du plugin et un package pour la génération du code SCL).
+===Generated source files (it is possible to be modified) ===
+The repertory GCLACS.diagram is also generated, but it can be sometimes manually modified (to customize the environment with new classes).
+The repertory CLACStoSCL_Plugin centralizes the interactions with the graphic design (1 Class by item of the plugin menu  and a package for generating the SCL code).
 
-===Fichiers sources gestion des contraintes OCL ===
-Le répertoire CLACS_OCLConst correspond à l'analyseur de contraintes OCL.
-Bien penser à générer un nouveau jar exécutable pour que GCLACS le prenne en compte.
-Voici le diagramme de classe explicitant la structure du plugin de contrainte :
+===source files: OCL constraints management ===
+The repertory CLACS_OCLConst corresponds to an analyzer of OCL contraintes.
+Think to generate a new executable jar in order to take it into account for GCLACS.
+we present here the class diagram explaining the structure of the constraint plugin:
 [http://clacs.googlecode.com/files/DiagrammeClasseConstraintPlugin.png]
 
-Les choses ont été simplifiées par clarté. 
- * La classe centrale « CaseAnalysis » va effectuer une analyse de cas des fichiers clacs pris en entrée. selon les types rencontrés, la classe Parsing correspondante sera utilisée. 
+These details are clearly simplified : 
+ * « CaseAnalysis »  class will perform a case study of clacs input files. According to the type found, the corresponding Parsing class will be used.
 
  * La classe AccessorModel comprend un ensemble d'accesseurs pour le modèle instancié spécifié par le métamodèle GCLACS.
 
