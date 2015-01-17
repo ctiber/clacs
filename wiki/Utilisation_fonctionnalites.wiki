@@ -148,16 +148,16 @@ Squeak is a graphic editor for est un éditeur graphique pour le langage SmallTa
 
 Les différentes fenêtres d'interaction sont :
 
- * (1) : Permet de choisir la catégorie 
+ * (1) : Allow to choose the category
 
- * (2) : Permet de selectionner le descripteur de composant
+ * (2) : Allow to  select the component descriptor
 
- * (3) : Permet de choisir la catégorie de la méthode
+ * (3) : Allow to choose the category of the method
 
- * (4) : Affiche l'ensemble des méthodes correspondant à la catégorie
+ * (4) : Displays all methods corresponding to the category
 
- * (5) : Editeur pour éventuellement modifier la méthode
+ * (5) : Editor allows to modify the method
 
- * (6) : Le workspace où l'on peut executer des commandes 
+ * (6) : The workspace where you can execute commands
 
- * (7) : Le transcript où les résultats sont visualisables
+ * (7) : The transcript where the results are displayed
