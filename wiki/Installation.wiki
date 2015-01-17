@@ -1,28 +1,28 @@
-_Explication du téléchargement et de l'installation du plugin Eclipse clacs_
+_Overiew of Eclipse plugin CLACS download and installation_
 
-Sommaire :
+Summary :
 
 <wiki:toc max_depth="4" />
 
-= Récapitulatif des téléchargements =
+= Downloads =
 
- * L'ensemble des codes sources des plugins sur le dépôt SVN
+ * plugins sources codes (SVN repository)
 
- * Deux archives contenant les dépendances (voir liens plus bas)
+ * Two .jar containing the dependencies (See URL link below)
 
- * Squeak et le plugin SoftConstraint (voir liens plus bas)
+ * Squeak and SoftConstraint plugin
 
 = Installation =
 
-_A tester et à compléter_
+_To test and to complete_
 
-==Installation Eclipse et ses plugins==
+==Eclipse and plugins Installation ==
 
-===Avec Galileo Eclipse Modeling Tools===
+===With Galileo Eclipse Modeling Tools===
 
-Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'installation de la plupart des plugins (à l'exception d'Orbit et Squeak) et des problèmes de dépendances. 
+Install Eclipse 3.5 Galileo version Eclipse Modeling Tools can avoid most plugins installation (exceptionally Orbit and Squeak) and dependency problems. 
 
-*_Nb : Nous recommandons fortement d'installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools. Installer cette version d'Eclipse sur un ordinateur possédant une autre version d'Eclipse n'affectera en rien la version déjà installée. Il suffit d'installer la nouvelle version dans un autre répertoire. Les deux versions pourront par ailleurs disposer d'un workspace chacun, mais pourront éventuellement partager le même._*
+*_Nb : We strongly recommend to install Eclipse 3.5 Galileo version Eclipse Modeling Tools. The installation of Eclipse with this version on a computer which has another version of Eclipse will not affect on the  version already installed. Just install the new version in a different directory. Both versions can also use differents workspaces but eventually can share the same one._*
 
  * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-linux-gtk.tar.gz  Galileo Eclipse Modeling Tools Version Linux] 
 
@@ -30,12 +30,12 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
 
  * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/galileo/R/eclipse-modeling-galileo-incubation-macosx-carbon.tar.gz Galileo Eclipse Modeling Tools Version Mac Carbon] 
 
-===Sans Galileo Eclipse Modeling Tools===
+===Without Galileo Eclipse Modeling Tools===
 
- * Télécharger et dézipper les dépendances [http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz Archive dépendance Partie 1] [http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz Archive dépendance Partie 2]
+ * Download and extract the dependencies [http://clacs.googlecode.com/files/D%C3%A9pendances1.tar.gz  Part 1] [http://clacs.googlecode.com/files/D%C3%A9pendances2.tar.gz  Part 2]
 
- * Installer dans Eclipse les plugins ci-dessous dans l’ordre suivant : 
-(cela revient à copier les .jar du dans le dossier plugin d'Eclipse)
+ * Install in Eclipse the plugins presented below in the following order:
+(copy the .jar in plugin folder of Eclipse)
  
  # EMF 
  # Query 
@@ -46,34 +46,35 @@ Installer Eclipse 3.5 Galileo en version Eclipse Modeling Tools peut éviter l'i
  # GEF 
  # Orbit(map) 
 
-==Installation de Squeak et du Plugin de contraintes SoftConstraint ==
+==Squeak and SoftConstraint Installation ==
 
 ===Squeak===
 
- * Télécharger et dézipper l'archive Squeak [http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
+ * Download and extract Squeak archive
+[http://clacs.googlecode.com/files/Squeak.zip Archive Squeak]
 
- * Pour windows, mettre le dossier Squeak, dans le même dossier que l’exécutable d'Eclipse. 
- * Pour Linux et Mac, des versions à installer sont présentes dans le dossier Squeak. 
+ * For windows, put Squeak folder in the same folder as Eclipse launcher. 
+ * For Linux and Mac, Versions to install are presented in the Squeak folder. 
 
-===Plugin de contraintes SoftConstraint===
+=== SoftConstraint : Constraints plugin===
 
- * Télécharger le plugin SoftConstraint [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
+ * Download SoftConstraint plugin [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
- * Copier le plugin SoftConstraint.jar dans le répertoire du projet courant d'Eclipse (par défaut sur Galileo : au même niveau que l'exécutable eclipse).
+ * Copy SoftConstraint.jar in project repertory (Bu default with Galileo : same level as eclipse launcher).
 
-==Installation du projet==
+==Project Installation==
 
-===Récuperation du mot de passe du dépôt SVN===
+===Recovery of the SVN repository password===
 
- * Aller sur le site http://code.google.com/p/clacs/ et s'authentifier avec les identifiants de votre compte.
+ * Authenticate with the credentials of your account on http://code.google.com/p/clacs/.
 
- * Aller sur l'onglet Sources et cliquez sur le lien "googlecode.com password" et gardez le mot de passe ainsi généré.
+ * Go to Sources tab and click on "googlecode.com password"  and save the generated password.
 
-===Installation de Subclipse Tigris===
+===Subclipse Tigris Installation===
 
- * Pour cela, ajoutez l'url suivante dans l'outil de mise à jour d'eclipse (help, install new software) : `http://subclipse.tigris.org/update_1.6.x`
+ * Add the following url in the eclipse update tool (help, install new software) : `http://subclipse.tigris.org/update_1.6.x`
 
- * Selectionnez subclipse et ses dépendances et lancez l'installation
+ * Select  subclipse and its dependencies and lanch the installation
 
 ===Récupération du projet sur le dépôt SVN===
 
