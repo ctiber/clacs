@@ -32,7 +32,7 @@ we present here the class diagram explaining the structure of the constraint plu
 [http://clacs.googlecode.com/files/DiagrammeClasseConstraintPlugin.png]
 
 These details are clearly simplified : 
- * « CaseAnalysis »  class will perform a case study of clacs input files. According to the type found, the corresponding Parsing class will be used.
+ * CaseAnalysis class will perform a case study of clacs input files. According to the type found, the corresponding Parsing class will be used.
 
  * AccessorModel class is composed of a set of accessors for the instancied model specified by CCLACS metamodel.
 
