@@ -34,38 +34,38 @@ we present here the class diagram explaining the structure of the constraint plu
 These details are clearly simplified : 
  * « CaseAnalysis »  class will perform a case study of clacs input files. According to the type found, the corresponding Parsing class will be used.
 
- * La classe AccessorModel comprend un ensemble d'accesseurs pour le modèle instancié spécifié par le métamodèle GCLACS.
+ * AccessorModel class is composed of a set of accessors for the instancied model specified by CCLACS metamodel.
 
- * La classe SerializerXMI permet de sérialiser le modèle instancié en XMI, pour y effectuer des vérifications, tests etc.
+ *SerializerXMI class allows to serialize the instancied model in XMI to perform verifications, tests etc.
 
- * La classe ConstraintInterpretor gère l'interprétation des contraintes OCL du modèle.
+ *ConstraintInterpretor class manages the interpretation of OCL contraints.
 
- * FenetreGUI est la classe gérant l'interface graphique, SoftConstraint est la classe contenant la fonction main. 
-Enfin, les répertoires CLACS et GCLACS sont respectivement les cœurs du langage CLACS et celui de l'environnement graphique GCLACS. 
+ * FenetreGUI is the class that is responsible to manage the graphic interface, SoftConstraint class contains the main function. 
+Finally, CLACS and GCLACS repertories are respectively the main of CLACS langage and graphic environnement GCLACS. 
 
-===Fichiers sources générés avec métamodèles ===
-CLACS contient le méta-métamodèle ecore permettant de modéliser les spécifications du langage CLACS. 
+===source files generated with metamodels===
+CLACS contains the ecore metamodel allowing to model CLACS language specifications. 
 
-==Modèles GMF==
+==GMF models==
 
-GCLACS comprend le méta-métamodèle ecore gérant les aspects graphiques relatifs à l'environnement GCLACS. Il est complété par un ensemble de modèles gmf (gmfgraph, gmfgen, gmfmap et gmftool) reliés entre eux. Le dashboard ci-dessous montre les relations qu'ont les modèles entre eux pour former l'environnement GCLACS.
+GCLACS contains the ecore metamodel manageant the graphic aspects that are relatives on GCLACS environnement. It is completed by a set of interconnected gmf models(gmfgraph, gmfgen, gmfmap et gmftool). The dashboard presented below depicts the relations between models in order to constitute GCLACS environment.
 
 [http://clacs.googlecode.com/files/dashboard.png]
 
 
-===Génération du code basé sur les modèles===
+===Code generation based on models===
 
-Lorsque l'on effectue des modifications sur le métamodèle ecore, il faut recharger le modèle genmodel. (Click droit sur le genmodel -> reload)
+when we perform modifications on ecore metamodels, we must reload genmodel model. (Right click on genmodel -> reload)
 
-Une fois celui-ci rechargé, il suffit de faire un click droit dessus et faire "Generate All".
+Once the latter is charged, it is sufficient to do a right click and do "Generate All".
 
-Lorsque des modifcations sont apportées au modèle gmfgraph, il faut regénérer les figures associées (Click droit -> Generate Figure Plug in), le nom du "main plugin" à mettre est "CLACS".
+When the modifications are made on Lorsque des modifcations gmfgraph model, it must regenerate the figures. (Rignt click -> Generate Figure Plug in), The name of "main plugin" to do is "CLACS".
 
-Si le modèle gmfmap est modifié, il faut créer le "Generator Model" (Clik droit).
+If gmfmap model is modified, it must create the le "Generator Model" (Right Click).
 
-Le modèle gmfgen centralise les modifications de tous les modèles, il faut donc le mettre à jour une fois que l'un des modèles à été mis à jour. (Click droit -> Generate Diagram Code). 
+gmfgen model centralizes the modifications of all models. It must to update it once one of the models is updated. (Right Click-> Generate Diagram Code). 
 
-/!\ Lors de la génération de code, le code existant est écrasé même si des modifications manuelles ont été apportées. Pour y remédier, il suffit de faire précéder la fonction à ne pas regénérer par le mot clé NOT derrière la mention generated.
+/!\ During code generation, the existed code is crashed even if the manual modifications are made. To remedy this, precede simply the function to not regenerate with the keyword NOT behind the generated mention.
 
 Exemple :
 {{{
