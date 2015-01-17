@@ -1,32 +1,32 @@
-_Une rapide synthèse des marches à suivre pour créer un projet clacs et un aperçu de ses fonctionnalités_
+_A quick summary of the steps to create a clacs project and an overview of its features_
 
-Sommaire :
+Summary :
 
 <wiki:toc max_depth="4" />
 
 
-=Créer un projet=
+=Create a project=
 
-Créer un nouveau Projet (New -> Project)
+Create a new project (New -> Project)
 
 [http://clacs.googlecode.com/files/newProject.png]
 
-Une fois créé, il est possible d'y ajouter un document gclacs_diagram.(Click droit sur le nouveau projet créé ->New->Other...) Ce nouveau document est automatiquement ouvert avec l'environnement GCLACS. Un document de type gclacs est en même temps généré.
+Once the projecyt is created, it is possible to add gclacs_diagram document.(Right click on the new project ->New->Other...) This new document is automatically open with GCLACS environnement. A document which his type is gclacs is generated at the same time.
 
 [http://clacs.googlecode.com/files/newGCLACSDiagram2.png]
 
 
-=Vue d'ensemble=
+=Overview=
 
-Comme dans tous les environnements de modélisation basés sur GMF, l'environnement GCLACS se décompose en : 
+As in all modeling environments based on GMF, the GCLACS environment decomposes on :
 
 [http://clacs.googlecode.com/files/FenetrePrincipaleAnnotee.png]
 
- * (a) : la fenêtre principale, où l'on va placer les divers éléments graphiques issus de la palette 
+ * (a) : the main window where you will place the various graphic elements from the palette. 
 
- * (b) : la palette d'outils permettant la création des nœuds et des liens
+ * (b) : the toolbox for creating nodes and links
  
- * (c) : l'onglet des propriétés décrivant les propriétés de l'élément sélectionné sur la fenêtre principale 
+ * (c) : the Property tab describing the properties of the selected item in the main window
 
 =Fonctionnalités=
 
