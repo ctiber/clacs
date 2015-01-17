@@ -26,24 +26,25 @@ As in all modeling environments based on GMF, the GCLACS environment decomposes 
 
  * (b) : the toolbox for creating nodes and links
  
- * (c) : the Property tab describing the properties of the selected item in the main window
+ * (c) : the Properties tab describing the properties of the selected item in the main window
 
-=Fonctionnalités=
+=features=
 
-Une fois que l'architecture souhaitée est réalisée, il suffit d'aller dans le menu CLACS pour se servir des fonctionnalités du Plugin :
+Once the desired archirecture is realized, it is it is sufficien to use the plugin features in CLACS menu:
 
 
 [http://clacs.googlecode.com/files/menuPlugin.png] 
 
 
-La fonctionnalité alors sélectionnée s'appliquera sur la page courante de l'éditeur graphique. En cas de mauvaise utilisation, un message précisera la cause du problème. 
-L'architecture modélisée pourra successivement subit les différentes procédures :
+The selected functinality will be applied on the current page of the graphical editor. In case of misuse, a message will specify the cause of the problem.
+The modeled architecture will successively undergoes various procedures: 
+
  
-==Architecture GCLACS vers Architecture CLACS==
+==GCLACS Architecture towards CLACS Architecture==
 
-Va générer un document en langage CLACS basé sur l'architecture modélisée.
+A  CLACS document will be generated basing on the modeled architecture.
 
-Exemple de document CLACS généré :
+Example of a generated CLACS document:
 
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,35 +86,36 @@ Exemple de document CLACS généré :
 </cl:Component_Instance>
 }}}
 
-==Validation de l'architecture CLACS==
-Va vérifier diverses "lois" à respecter.
+==CLACS Architecture validation ==
 
-Exemple : tous les éléments doivent être nommés
+will verify that the rules are respected. 
+
+Example : all elements must be nominated
 
  
 [http://clacs.googlecode.com/files/erreurValidation.png]
 
-==Vérification des contraintes==
+==Constraints verification ==
 
-Va analyser les contraintes OCL décrites dans l'architecture. Un listing des contraintes et de leurs éventuels paramètres sera affiché pour présenter les résultats obtenus. Dans le cas où une contrainte serait invalidée ou syntaxiquement incorrecte, un message informera l'utilisateur, l'invitant à corriger les erreurs relevées. L'utilisateur est également prévenu lorsque le nombre de paramètres est différent du nombre d'arguments.
+Will analyze the OCL constraints described in the architecture. A listing of the constraints and their possible parameters will be displayed to show the results. In case of constraint would be invalidated or syntactically incorrect, a message will inform the user, inviting him to correct errors. The user is notified when the number of parameters differs from the number of arguments.
 
-Exemple d'analyse de contraintes valides :
+Example of analysis of validated constraints :
 
 [http://clacs.googlecode.com/files/cstOK.png]
 
-Exemple d'analyse de contraintes invalides :
+Example analysis of invalidated constraints :
 
 [http://clacs.googlecode.com/files/cstFalse.png]
 
-Exemple d'analyse de contraintes avec erreur de syntaxe OCL :
+Exemple of analysis of constraints with error in OCL syntax:
 
 [http://clacs.googlecode.com/files/cstErr.png]
 
-==Architecture CLACS vers code SCL==
+==CLACS Architecture towards SCL code==
 
-Va générer le squelette du code SCL de l'architecture de composants décrite par le fichier CLACS sélectionné.
+Will generate the template of SCL code of components architecture described by the selected CLACS file.
 
-Exemple de document SCL généré :
+Example of a generated SCL document :
 
 {{{
 (SclBuilder new: #GlobalComp
@@ -134,15 +136,15 @@ init
 '.
 }}}
 
-==Charger dans Squeak==
+==Load in Squeak==
 
-Va démarrer l'éditeur Squeak avec en paramètre le fichier SCL courant.
+will open the Squeak editor tacking as parameter the current SCL file.
 
-Une capture d'écran de Squeak :
+A screenshot of Squeak :
 
 [http://clacs.googlecode.com/files/squeak.png]
 
-Squeak est un éditeur graphique pour le langage SmallTalk (SCL étant un langage de composants basé sur SmallTalk)
+Squeak is a graphic editor for est un éditeur graphique pour le langage SmallTalk language (SCL is a component language based on SmallTalk)
 
 Les différentes fenêtres d'interaction sont :
 
