@@ -1,4 +1,4 @@
-_Overiew of Eclipse plugin CLACS download and installation_
+_Overivew of CLACS Eclipse plugin download and installation_
 
 Summary :
 
@@ -46,7 +46,7 @@ Install Eclipse 3.5 Galileo version Eclipse Modeling Tools can avoid most plugin
  # GEF 
  # Orbit(map) 
 
-==Squeak and SoftConstraint Installation ==
+==Squeak and SoftConstraint Installation==
 
 ===Squeak===
 
@@ -56,7 +56,7 @@ Install Eclipse 3.5 Galileo version Eclipse Modeling Tools can avoid most plugin
  * For windows, put Squeak folder in the same folder as Eclipse launcher. 
  * For Linux and Mac, Versions to install are presented in the Squeak folder. 
 
-=== SoftConstraint : Constraints plugin===
+===SoftConstraint:Constraints plugin===
 
  * Download SoftConstraint plugin [http://clacs.googlecode.com/files/SoftConstraint.jar Plugin SoftConstraint]
 
@@ -74,35 +74,35 @@ Install Eclipse 3.5 Galileo version Eclipse Modeling Tools can avoid most plugin
 
  * Add the following url in the eclipse update tool (help, install new software) : `http://subclipse.tigris.org/update_1.6.x`
 
- * Select  subclipse and its dependencies and lanch the installation
+ * Select subclipse and its dependencies and launch the installation
 
-===Récupération du projet sur le dépôt SVN===
+===Recovery of the project from SVN repository===
 
- * Il est désormais possible de créer un nouveau Checkout SVN. (New-> SVN ->Checkout Projets from SVN)
+ * It is possible to create a new SVN Checkout. (New-> SVN ->Checkout Projets from SVN)
 
- * Cochez "Create a new repository location", et entrez l'url : `https://clacs.googlecode.com/svn/trunk/`
+ * Check "Create a new repository location", and put l'url : `https://clacs.googlecode.com/svn/trunk/`
 
- * S'identifier avec pour login, l'adresse mail qui vous a permit de vous identifier sur `http://code.google.com/p/clacs/` et pour mot de passe celui précédement réccupéré.
+ * Authenticate with the login and e-mail on `http://code.google.com/p/clacs/` and with passsword that is previously recovered.
 
- * Une fenêtre récapitule l'ensemble des dossiers du projet, selectionnez tous les dossiers et terminez.
+ * A window summarizes all project folders, select all the folders and complete.
 
- * L'ensemble des répertoires du projet est ajouté au Workspace.
+ * All the project directory is added to the Workspace.
 
-===Résolution des dépendances manquantes===
+===Resolving missing dependencies===
 
-Ajoutez les dépendances suivantes (sur le projet concerné : click droit -> Properties ->Java build path -> Libraries) 
+Add the following dependencies (the project : right click -> Properties ->Java build path -> Libraries) 
 
-_nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
+_nb : If the librairies are present and not found, delet it_
 
-====Projet CLACS====
+==== CLACS Project====
 
  * org.eclipse.emf.ocl_1.1.1.v200709121956 (répertoire mdt-ocl-SDK-1.1.2/eclipse/plugins des dépendances)
 
-====Projet CLACStoSCL_Plugin====
+====CLACStoSCL_Plugin Project====
 
  * org.eclipse.emf.ecore_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
 
-====Projet CLACS_OCLConst====
+====CLACS_OCLConst Project====
 
  * org.eclipse.emf.common_2.3.2.v200802051830(répertoire emf-sdo-xsd-SDK-2.3.2/eclipse/plugins des dépendances)
 
@@ -128,10 +128,9 @@ _nb : Si des librairies sont déjà présentes et introuvables, les supprimer._
 
  * org.eclipse.ui.workbench_3.5.0.I20090603-2000(répertoire plugins d'eclipse)
 
-===Lancement du projet===
+===Project launching===
+The project should not have errors (if that is the case, add missing dependencies in the same way, they will be reported by the tab "problems" Eclipse.
 
-Le projet ne devrait plus avoir d'erreurs (si c'est le cas, ajouter les dépendances manquantes de la même manière, elles seront signalées par l'onglet "problems" d'Eclipse.
+To compile it, just run CLACS as an "Eclipse Application" (right click on the clacs project, Run as -> Eclipse Application, or shortcut Shift + Alt + X sunken, and E). The version of Eclipse have a plugin CLACS 1.1.
 
-Pour le compiler, il suffit de lancer CLACS en tant qu'"Eclipse Application"(click droit sur le projet CLACS, Run as -> Eclipse Application, ou le raccourci Shift + Alt + X enfoncés, puis E). La version d'Eclipse ainsi lancée disposera du plugin CLACS 1.1. 
-
-L'utilisation du plugin CLACS est expliqué dans la partie [http://code.google.com/p/clacs/wiki/Utilisation_fonctionnalites Utilisation et Fonctionnalités]
+Using the plugin clacs is explained in the [http://code.google.com/p/clacs/wiki/Utilisation_fonctionnalites Utilisation et Fonctionnalités]
