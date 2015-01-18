@@ -28,7 +28,7 @@ As in all modeling environments based on GMF, the GCLACS environment decomposes 
  
  * (c) : the Properties tab describing the properties of the selected item in the main window
 
-=features=
+=Features=
 
 Once the desired archirecture is realized, it is it is sufficien to use the plugin features in CLACS menu:
 
@@ -36,13 +36,13 @@ Once the desired archirecture is realized, it is it is sufficien to use the plug
 [http://clacs.googlecode.com/files/menuPlugin.png] 
 
 
-The selected functinality will be applied on the current page of the graphical editor. In case of misuse, a message will specify the cause of the problem.
+The selected functionality will be applied on the current page of the graphical editor. In case of misuse, a message will specify the cause of the problem.
 The modeled architecture will successively undergoes various procedures: 
 
  
 ==GCLACS Architecture towards CLACS Architecture==
 
-A  CLACS document will be generated basing on the modeled architecture.
+A CLACS document will be generated basing on the modeled architecture.
 
 Example of a generated CLACS document:
 
