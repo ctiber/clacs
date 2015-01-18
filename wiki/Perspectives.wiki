@@ -1,26 +1,26 @@
-_Quelques pistes pour la poursuite du projet_
+_Some futur work_
 
-Sommaire :
+Summary :
 
 <wiki:toc max_depth="4" />
 
 
-=Perspectives=
+=Futur work=
 
-==Perspectives graphiques==
+==Graphic futur work ==
 
- * Améliorer le placement des éléments (notamment les ports, sur les extrémités, à la manière de [http://forge.ow2.org/project/download.php?group_id=22&file_id=3532 FractalGUI]
+ * Improve elements placement( Ports ...) with the style of [http://forge.ow2.org/project/download.php?group_id=22&file_id=3532 FractalGUI]
 
- * Ajouter une charte graphique (code couleur, remplissage etc.) pour mettre en évidence certaines propriétés (visibilité des ports, kind des services etc...) 
+ * Add a graphic chart (code, color, ...) to bring out some properties (ports visibility, kind of services ..) 
 
- * Retravailler l'interface graphique affichant les résultats des contraintes OCL des composants 
+ * Rework the graphic interface displaying the results of OCL constraints of the components. 
 
- * Disposer d'une palette de composants déjà modélisés, et pouvoir les placer directement sur l'environnement de modélisation
+ * Dispose of modeled components palette and be able to deplace them in design environnement.
 
-==Techniques== 
+==Technical futur work== 
 
- * Effectuer des batteries de tests complets pour ajouter la gestion des exceptions non traitées à l'heure actuelle.
+* Perform comprehensive tests to add the management of unhandled exceptions at present.
 
- * Implémenter les bindings spécifiques pour les composants (AND, OR, XOR, implies, negative, affirmative, functional) nuançant l'évaluation des contraintes OCL.
+  * Implement specific bindings for components (AND, OR, XOR, Implies, negative, affirmative, functional) qualifying the evaluation of OCL constraints.
 
- * Ajouter un item au menu du Plugin offrant à l'utilisateur le choix de générer le code SCL d'une instance, ou d'un descripteur de composant 
+  * Add Item to plugin menu offering the user the choice to generate the SCL code of an instance or a component descriptor
