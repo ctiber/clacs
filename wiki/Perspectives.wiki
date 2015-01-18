@@ -19,7 +19,7 @@ Summary :
 
 ==Technical futur work == 
 
-  * Add Item to plugin menu offering the user the choice to generate the SCL code of an instance or a component descriptor.
+ * Add Item to plugin menu offering the user the choice to generate the SCL code of an instance or a component descriptor.
 
  * Perform comprehensive tests to add the management of unhandled exceptions at present.
 
