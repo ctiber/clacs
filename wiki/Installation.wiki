@@ -6,7 +6,7 @@ Summary :
 
 = Downloads =
 
- * plugins sources codes (SVN repository)
+ * Plugins sources codes (SVN repository)
 
  * Two .jar containing the dependencies (See URL link below)
 
