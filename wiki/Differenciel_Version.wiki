@@ -91,19 +91,20 @@ So, ComponentDescriptor tool is removed and Body and Arg tools are appeared.
 
 [http://clacs.googlecode.com/files/gmftool23-07-09.png]
 
-===Modification au niveau du code source===
+===Code source modifications===
 
- * Les classes régissant la gestion des items du menu du plugin GCLACS ont été retravaillées pour correspondre aux nouveaux modèles. 
+ * Classes administ the management of items GCLACS plugin menu have been reworked to match the new models
  
- * Le langage de spécification CLACS et l'environnement GCLACS ayant subit des modifications, les opérations résultantes ont aussi été retravaillées.
+ * CLACS and GCLACS are modified, the resulting operations were also reworked.
 
-Un nouveau Plugin va gérer les contraintes OCL incluses dans les définitions des services des composants. Ce Plugin gère à l'heure actuelle les contraintes OCL avec et sans paramètre.
-Le contexte du composant contrainte est propagé dans le cas où ce composant serait connecté à un ou plusieurs autres composants contraintes. 
-Le premier composant non contrainte trouvé sera le contexte.
 
-Dans l'exemple ci-dessous (modélisé avec GCLACS), Cst et Cst2 sont deux composants contraintes, et Comp un composant métier.
-Cst va apporter une contrainte sur son contexte. Mais Cst étant connecté à Cst2 qui est lui aussi un composant contrainte, le contexte va se propager à Comp (vu que Cst2 est lui connecté à Comp) :
+A new plugin will manage the OCL constraints included in the definitions of component services. This plugin handles currently OCL constraints with and without parameter.
+The context of the constraint component is propagated in the case where this component is connected to one or several other  constraints components.
+
+
+In the example presented below (modeled with GCLACS), Cst et Cst2 are two constraints compoenents and Comp  is a business components.
+Cst will bring a constraint on its context. But Cst is connected to Cst2 that it is also a constraint component. The context will spreadto Comp: 
 
 [http://clacs.googlecode.com/files/exemplePropagationContexte.png]
 
-Les interprétations tirant partie de binding plus évolués (AND, OR, XOR etc.) pour combiner les contraintes ne sont pas encore implémentées. 
+Interpretations taking advantage of more advanced binding (AND, OR, XOR etc.) to combine the constraints are not implemented yet. 
