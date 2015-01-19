@@ -5,9 +5,7 @@ Summary :
 <wiki:toc max_depth="4" />
 
 
-
 = Difference between the version 1.0 and the version 1.1 =
-
 
 
 *List of main changes between the two versions : *
@@ -26,58 +24,57 @@ Summary :
 
  * Integration and analyses of OCL constraints (with and without arguments)basing on the modeled component architecture 
 
-== Détails ==
+== Details ==
 
 
-_Nous développerons ci-après les modifications apportées aux deux métamodèles du projet. Ceux-ci correspondent au noyau central du projet. Ce sont eux qui vont définir les règles du langage CLACS, les éléments graphiques et leurs possibilités de placement, leurs relations etc.
-Nous évoquerons aussi les ajouts effectués aux modèles gmf (gmfgraph, gmfmap, gmftool etc.) qui définissent l'environnement graphique.
-Nous parlerons enfin des modifications apportées au code source._
+_We will develop the modifications made for the two metamodels in the project. They correspond to the core of the project. They will define the rules of CLACS language, graphics elements, its relationships etc.
+We will discuss the additions to gmf models (gmfgraph, gmfmap, gmftool etc.) that define the graphical environment.
+Finally, we discuss the changes made to the source code._
 
-===Comparatif ancien / nouveau métamodèle CLACS===
+===Comparison old / new CLACS metamodel===
 
 
-====Ancien métamodèle CLACS====
+====CLACS old metamodel====
 [http://clacs.googlecode.com/files/CLACS2.png]
-====Nouveau métamodèle CLACS====
+====CLACS new metamodel====
 [http://clacs.googlecode.com/files/CLACS23-07-092.png]
 
-Le descripteur de composant(ComponentDescriptor), qui était l'élément central de l'ancien métamodèle a laissé place à l'instance de composant (ComponentInstance). Cela permet de voir un composant modélisé comme étant de base une instance d'un composant (décrivant le descripteur de ce composant). 
+The component descriptor (ComponentDescriptor), which was the main element of the old metamodel has given place to the component instance (ComponentInstance). This allows to see a modeled component as an instance of a component (describing the descriptor of that component).
 
 Manipuler une instance autorise la génération d'une instance ou d'un descripteur de composant aisément. Ainsi, les ports, interfaces et binding de retrouvent "inclus" dans l'instance de composant. La notion de descripteur a été encapsulé, de manière a simplifier la modélisation, elle reste bien-sûr présente en interne. 
+Manipulate an instance allows the generation of an instance or a componenet descriptor easily. Thus, the ports, the interfaces and the binding are found "included" in the component instance. The concept of descriptor was encapsulated, to simplify the modeling.
 
-Les notions de corps de service (Body), arguments des services (Arg) ainsi que les services utilisés par un binding (UsedService) étaient déjà présentes dans ce métamodèle, mais non implémentées. 
+We can see that the concepts of AssemblyBinding and DelegationBinding have been added, but they are not currently connected to the binding.
 
-On peut voir que les notions d'AssemblyBinding et de DelegationBinding ont été ajouté, mais qu'elle ne sont pas pour le moment connectés au binding. 
+The old BindingKind gives a way to A_BindingKind et D_BindingKind. (these modifications will induce a modification in the system of interpretation of OCL constraints). They allow to perform associations of constraints. For example, if two components are interconnected by OR binding. they also connected to a business one. This later should satisfay one or other constraints.  
 
-L'ancien BindingKind laissera alors place aux A_BindingKind et D_BindingKind. (ces modifications induiront une modification du système d'interprétation des contraintes OCL). 
-Ils permettront d'effectuer des associations de contraintes. Par exemple, si deux composants contraintes sont connectés entre eux par un binding OR et que ceux-là sont reliés à un composant métier, ce dernier devra satisfaire l'une ou l'autre des contraintes. 
 
-===Comparatif ancien/ nouveau métamodèle GCLACS===
+===Comparison old/ new GCLACS metamodel===
  
-====Ancien métamodèle GCLACS====
+====GCLACS old metamodel====
 [http://clacs.googlecode.com/files/GCLACS2.png]
-====Nouveau métamodèle GCLACS====
+====GCLACS new metamodel====
 [http://clacs.googlecode.com/files/GCLACS23-07-092.png]
 
 Toutes les modifications apportées au métamodèle CLACS ont eu des répercutions sur ce métamodèle. 
 
-Les éléments suivants ont été retravaillés : 
+The following items have been reworked : 
 
- * De la même manière que pour le métamodèle CLACS, le métamodèle est centralisé autour de la notion d'instance de composant (ComponentInstance) 
+ * In the same way as for the metamodel clacs, the metamodel is centralized around the concept of component instance(ComponentInstance) 
 
- * Comme pour le métamodèle CLACS, les services disposent désormais d'un corps (Body), d'un ensemble d'arguments (Arg) et d'un type de retour (returnedType)
+ * As the CLACS metamodel, services now have a body (Body), a set of arguments (Arg) and a return type (returnedType).
  
- * Les binding disposent désormais d'un nom (pour pouvoir être identifié dans les contraintes OCL). Ils possèdent de plus un service utilisé (usedServiceName) et de la liste de ses paramètres (usedServiceArgs). 
+ * The binding now have a name (to be identified in the OCL constraints). They have over a used service (usedServiceName) and the list of parameters (usedServiceArgs). 
  
-===Modifications gmfgraph===
+===gmfgraph modifications===
 
-Comme on peut le voir sur cette nouvelle version du gmfgraph, le noeud ComponentDescriptor et sa représentation associée a été retiré. 
+As indicated in the new version of gmfgraph, the node of ComponentDescriptor and its representation was removed. 
 
-La figure du ComponentInstance se voit doté d'un label supplémentaire, permettant de renseigner le nom du descripteur qui lui est lié. 
+The figure of ComponentInstance is seen with an additional label, to enter the name of the descriptor that is linked to it.
 
-Les nœuds Arg et Body font leur apparition et sont décrits par des "Custom Figure", figure que l'on va créer de tout pièce en créant une nouvelle classe basée sur la classe générique "Shape". 
+Arg and Body nodes are described by "Custom Figure", Figure that will be created by creating a new class based on the generic class "Shape". 
 
-Un "Compartment" BodyArgsCompartments a été ajouté. Il appartiendra à l'élément Service permettant le stockage des Arg et Body. 
+A "Compartment" BodyArgsCompartments was added. it will be belong to Service element to store Arg and body. 
 
 [http://clacs.googlecode.com/files/gmfgraph23-07-09.png]
 
